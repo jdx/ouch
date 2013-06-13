@@ -27,11 +27,11 @@ $ gem install ouch
 ```ruby
 require 'ouch'
 hospital = Ouch.find(lat: 34.0736204, lng: -118.4003563)
-hospital.name # => "Cedars-Sinai Medical Center"
-hospital.address # => "8700 Beverly Boulevard Los Angeles, CA 90048-1865"
-hospital.phone # => "310-423-5000"
-hospital.number_of_beds # => 914
-hospital.url # => "http://www.ushospitalfinder.com/hospital/Cedars-Sinai-Medical-Center-Los-Angeles-CA"
+hospital[:name] # => "Cedars-Sinai Medical Center"
+hospital[:address] # => "8700 Beverly Boulevard Los Angeles, CA 90048-1865"
+hospital[:phone] # => "310-423-5000"
+hospital[:number_of_beds] # => 914
+hospital[:url] # => "http://www.ushospitalfinder.com/hospital/Cedars-Sinai-Medical-Center-Los-Angeles-CA"
 ```
 
 ## Contributing
