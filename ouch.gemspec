@@ -8,9 +8,9 @@ Gem::Specification.new do |spec|
   spec.version       = Ouch::VERSION
   spec.authors       = ["dickeyxxx"]
   spec.email         = ["jeff@dickey.xxx"]
-  spec.description   = %q{TODO: Write a gem description}
-  spec.summary       = %q{TODO: Write a gem summary}
-  spec.homepage      = ""
+  spec.description   = %q{Finds a hospital based on lat/lon}
+  spec.summary       = %q{Uses ushospitalfinder.com}
+  spec.homepage      = "https://github.com/dickeyxxx/ouch"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files`.split($/)
@@ -20,4 +20,7 @@ Gem::Specification.new do |spec|
 
   spec.add_development_dependency "bundler", "~> 1.3"
   spec.add_development_dependency "rake"
+
+  spec.add_dependency "faraday"
+  spec.add_dependency "nokogiri"
 end

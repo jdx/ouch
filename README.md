@@ -1,24 +1,39 @@
 # Ouch
 
-TODO: Write a gem description
+Finds you a hospital.
 
 ## Installation
 
 Add this line to your application's Gemfile:
 
-    gem 'ouch'
+```ruby
+gem 'ouch'
+```
 
 And then execute:
 
-    $ bundle
+```bash
+$ bundle
+```
 
 Or install it yourself as:
 
-    $ gem install ouch
+```bash
+$ gem install ouch
+```
 
 ## Usage
 
-TODO: Write usage instructions here
+```ruby
+require 'ouch'
+hospital = Ouch.find(lat: 34.0736204, lng: -118.4003563)
+hospital.name # => "Cedars-Sinai Medical Center"
+hospital.address # => "8700 Beverly Boulevard Los Angeles, CA 90048-1865"
+hospital.phone # => "310-423-5000"
+hospital.number_of_beds # => 914
+hospital.types # => ["Nongovernment", "Not-for-profit"]
+hospital.website # => "http://www.cedars-sinai.edu"
+```
 
 ## Contributing
 
