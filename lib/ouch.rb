@@ -1,5 +1,6 @@
 require "ouch/version"
-require "ouch/info"
+require 'faraday'
+require 'nokogiri'
 
 module Ouch
   def self.find(lat: nil, lng: nil)
