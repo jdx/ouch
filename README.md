@@ -31,6 +31,7 @@ hospital.name # => "Cedars-Sinai Medical Center"
 hospital.address # => "8700 Beverly Boulevard Los Angeles, CA 90048-1865"
 hospital.phone # => "310-423-5000"
 hospital.number_of_beds # => 914
+hospital.url # => "http://www.ushospitalfinder.com/hospital/Cedars-Sinai-Medical-Center-Los-Angeles-CA"
 ```
 
 ## Contributing

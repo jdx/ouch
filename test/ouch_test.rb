@@ -18,7 +18,11 @@ class TestOuch < MiniTest::Unit::TestCase
     @hospital.phone.must_equal "310-423-5000"
   end
 
-  def number_of_beds
-    @hospital.phone.must_equal 914
+  def test_number_of_beds
+    @hospital.number_of_beds.must_equal 914
+  end
+
+  def test_url
+    @hospital.url.must_equal 'http://www.ushospitalfinder.com/hospital/Cedars-Sinai-Medical-Center-Los-Angeles-CA'
   end
 end
