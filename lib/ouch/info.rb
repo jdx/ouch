@@ -1,6 +1,5 @@
 require 'faraday'
 require 'nokogiri'
-require 'pry'
 
 module Ouch
   class Info
