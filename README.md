@@ -1,4 +1,4 @@
-# Ouch
+# Ouch [![Build Status](https://travis-ci.org/dickeyxxx/ouch.png?branch=master)](https://travis-ci.org/dickeyxxx/ouch)
 
 Finds you a hospital.
 
