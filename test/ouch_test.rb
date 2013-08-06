@@ -1,9 +1,20 @@
 require 'minitest/autorun'
+require 'vcr'
 require 'ouch'
+
+VCR.configure do |c|
+  c.cassette_library_dir = 'test/vcr_cassettes'
+  c.hook_into :faraday
+end
 
 class TestOuch < MiniTest::Unit::TestCase
   def setup
+    VCR.insert_cassette __name__
     @hospital = Ouch.find(lat: 34.0736204, lng: -118.4003563)
+  end
+
+  def teardown
+    VCR.eject_cassette
   end
 
   def test_name

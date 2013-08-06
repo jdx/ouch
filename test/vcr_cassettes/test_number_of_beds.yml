@@ -1,0 +1,1587 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://www.ushospitalfinder.com/hospitals/search?search_query=hospital&lat=34.0736204&lng=-118.4003563
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.8.8
+  response:
+    status:
+      code: 200
+      message: 
+    headers:
+      server:
+      - nginx/0.7.62
+      date:
+      - Tue, 06 Aug 2013 00:53:22 GMT
+      content-type:
+      - text/html; charset=utf-8
+      transfer-encoding:
+      - chunked
+      connection:
+      - close
+      x-runtime:
+      - '80'
+      etag:
+      - '"14b3a7a283013cc615926b354192bf43"'
+      cache-control:
+      - private, max-age=0, must-revalidate
+      set-cookie:
+      - _hospital_maps_session=BAh7BzoPc2Vzc2lvbl9pZCIlYjRkZmYyMDVhOGI1ZTkwODkzMDgxZDY4MDc0MWE4ZGUiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhhc2h7BjoLbm90aWNlIgAGOgpAdXNlZHsGOwdG--682f0fde0212447c0e6dccf6bd55358ef47c4986;
+        path=/; HttpOnly
+    body:
+      encoding: UTF-8
+      string: "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\"\n
+        \      \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\">\n\n\n<html
+        xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en\" lang=\"en\">\n\n<head>\n
+        \ <meta http-equiv=\"content-type\" content=\"text/html;charset=UTF-8\" />\n
+        \ <meta name=\"description\" content=\"US Hospital Finder found 127 hospitals
+        within 30 miles of hospital. More information such as phone number, address,
+        owner, services, ratings and quality data are also available.\" />\n  <meta
+        http-equiv=\"keywords\" content=\"hospital, hospitals, directory, guide, web
+        sites, direction, services, information\"/>\n  \n  \n  <title>Hospitals in
+        hospital - US Hospital Finder</title>\n  \n  <link rel=\"search\" type=\"application/opensearchdescription+xml\"
+        title=\"US Hospital Finder\" href=\"/ushospitalfinderplugin.xml\" />\n  <link
+        href=\"/stylesheets/screen.css?1262470777\" media=\"screen,projection\" rel=\"stylesheet\"
+        type=\"text/css\" />\n  <link href=\"/stylesheets/print.css?1262470777\" media=\"print\"
+        rel=\"stylesheet\" type=\"text/css\" />\n  <!--[if IE]><link href=\"/stylesheets/ie.css?1262470777\"
+        media=\"screen, projection\" rel=\"stylesheet\" type=\"text/css\" /><![endif]-->\n
+        \ <link href=\"/stylesheets/typography.css?1262470777\" media=\"screen\" rel=\"stylesheet\"
+        type=\"text/css\" />\n  <link href=\"/stylesheets/hospital.css?1262470777\"
+        media=\"screen\" rel=\"stylesheet\" type=\"text/css\" />\n  <script src=\"/javascripts/prototype.js?1262470777\"
+        type=\"text/javascript\"></script>\n  <script src=\"/javascripts/application.js?1262470777\"
+        type=\"text/javascript\"></script>\n\n  <script type=\"text/javascript\"\n
+        \   src=\"http://maps.google.com/maps/api/js?v=3.1&sensor=true\">\n  </script>\n\n<script
+        type=\"text/javascript\" src=\"http://apis.google.com/js/plusone.js\"></script>\n</head>\n<body>\n\n\t<script>\n\t\t
+        \      var gmarkers = [];\n     var i = 0; \n     var map;\n     function
+        go_to_hospital(j) {\n            google.maps.event.trigger(gmarkers[j], \"click\");\n
+        \           document.getElementById('map').scrollIntoView();\n     }\n     \n
+        \    function createMarker(point, text, icon_i) {\n            var marker
+        = new google.maps.Marker({position:point,icon:icon_i});\n            google.maps.event.addListener(marker,
+        \"click\", function() {\n\t            var infowindow = new google.maps.InfoWindow({content:text});\n
+        \               infowindow.open(map,marker);\n            });\n            gmarkers[i]
+        = marker;\n            i++\n            return marker;\n     }\n\t\n    \n
+        \   function initialize() {\n       var crossIcon = new google.maps.MarkerImage('/images/icon63.png',new
+        google.maps.Size(32,32),new google.maps.Point(0,0),new google.maps.Point(16,32));\n\n
+        \      var pinIcon = new google.maps.MarkerImage('/images/icon14.png',new
+        google.maps.Size(32,32),new google.maps.Point(0,0),new google.maps.Point(16,32));\n
+        \         \n      \n       \tvar mapOptions = {\n\t          zoom: 12,\n\t\t
+        \     mapTypeId: google.maps.MapTypeId.ROADMAP\n\t\t };\n\n        map = new
+        google.maps.Map(document.getElementById(\"map\"),mapOptions);\n        map.setCenter(new
+        google.maps.LatLng(34.0736204, -118.4003563));\n        var point = null\n
+        \       var marker;\n       \n        \n          point = new google.maps.LatLng(34.07671,-118.381052);\n
+        \         marker = createMarker(point,'<a href=\\\"/hospital/Cedars-Sinai-Medical-Center-Los-Angeles-CA\\\">Cedars-Sinai
+        Medical Center<\\/a> <br> 8700 Beverly Boulevard <br> Los Angeles CA 90048-1865
+        <br> <a href=\\\"/hospital/Cedars-Sinai-Medical-Center-Los-Angeles-CA\\\">Get
+        details & directions<\\/a>',crossIcon);\n          marker.setMap(map);\n        \n
+        \         point = new google.maps.LatLng(34.059002,-118.412243);\n          marker
+        = createMarker(point,'<a href=\\\"/hospital/CENTURY-CITY-DOCTORS-HOSPITAL-LOS-ANGELES-CA\\\">CENTURY
+        CITY DOCTORS HOSPITAL<\\/a> <br> 2070 CENTURY PARK EAST <br> LOS ANGELES                    CA
+        90067 <br> <a href=\\\"/hospital/CENTURY-CITY-DOCTORS-HOSPITAL-LOS-ANGELES-CA\\\">Get
+        details & directions<\\/a>',crossIcon);\n          marker.setMap(map);\n        \n
+        \         point = new google.maps.LatLng(34.05794,-118.362774);\n          marker
+        = createMarker(point,'<a href=\\\"/hospital/MIRACLE-MILE-MEDICAL-CENTER-LOS-ANGELES-CA\\\">MIRACLE
+        MILE MEDICAL CENTER<\\/a> <br> 6000 SAN VICENTE BLVD <br> LOS ANGELES                    CA
+        90036 <br> <a href=\\\"/hospital/MIRACLE-MILE-MEDICAL-CENTER-LOS-ANGELES-CA\\\">Get
+        details & directions<\\/a>',crossIcon);\n          marker.setMap(map);\n        \n
+        \         point = new google.maps.LatLng(34.063842,-118.442832);\n          marker
+        = createMarker(point,'<a href=\\\"/hospital/UCLA-Medical-Center-Los-Angeles-CA\\\">UCLA
+        Medical Center<\\/a> <br> 10833 Le Conte Avenue <br> Los Angeles CA 90095-3075
+        <br> <a href=\\\"/hospital/UCLA-Medical-Center-Los-Angeles-CA\\\">Get details
+        & directions<\\/a>',crossIcon);\n          marker.setMap(map);\n        \n
+        \         point = new google.maps.LatLng(34.05747,-118.360001);\n          marker
+        = createMarker(point,'<a href=\\\"/hospital/Olympia-Medical-Center-Los-Angeles-CA\\\">Olympia
+        Medical Center<\\/a> <br> 5900 West Olympic Boulevard <br> Los Angeles CA
+        90036 <br> <a href=\\\"/hospital/Olympia-Medical-Center-Los-Angeles-CA\\\">Get
+        details & directions<\\/a>',crossIcon);\n          marker.setMap(map);\n        \n
+        \         point = new google.maps.LatLng(34.06631,-118.445051);\n          marker
+        = createMarker(point,'<a href=\\\"/hospital/UCLA-Neuropsychiatric-Hosp-Los-Angeles-CA\\\">UCLA
+        Neuropsychiatric Hosp<\\/a> <br> 760 Westwood Plaza <br> Los Angeles CA 90095-8353
+        <br> <a href=\\\"/hospital/UCLA-Neuropsychiatric-Hosp-Los-Angeles-CA\\\">Get
+        details & directions<\\/a>',crossIcon);\n          marker.setMap(map);\n        \n
+        \         point = new google.maps.LatLng(34.03783,-118.375251);\n          marker
+        = createMarker(point,'<a href=\\\"/hospital/Kaiser-Foundation-Hospital-Los-Angeles-CA\\\">Kaiser
+        Foundation Hospital<\\/a> <br> 6041 Cadillac Avenue <br> Los Angeles CA 90034-1702
+        <br> <a href=\\\"/hospital/Kaiser-Foundation-Hospital-Los-Angeles-CA\\\">Get
+        details & directions<\\/a>',crossIcon);\n          marker.setMap(map);\n        \n
+        \         point = new google.maps.LatLng(34.023362,-118.397261);\n          marker
+        = createMarker(point,'<a href=\\\"/hospital/Brotman-Medical-Center-Culver-City-CA\\\">Brotman
+        Medical Center<\\/a> <br> 3828 Delmas Terrace <br> Culver City CA 90232-6806
+        <br> <a href=\\\"/hospital/Brotman-Medical-Center-Culver-City-CA\\\">Get details
+        & directions<\\/a>',crossIcon);\n          marker.setMap(map);\n        \n
+        \         point = new google.maps.LatLng(34.052368,-118.458548);\n          marker
+        = createMarker(point,'<a href=\\\"/hospital/VA-Greater-LA-Hlthcare-System-Los-Angeles-CA\\\">VA
+        Greater LA Hlthcare System<\\/a> <br> 11301 Wilshire Boulevard <br> Los Angeles
+        CA 90073-1003 <br> <a href=\\\"/hospital/VA-Greater-LA-Hlthcare-System-Los-Angeles-CA\\\">Get
+        details & directions<\\/a>',crossIcon);\n          marker.setMap(map);\n        \n
+        \         point = new google.maps.LatLng(34.096311,-118.32508);\n          marker
+        = createMarker(point,'<a href=\\\"/hospital/Hollywood-Community-Hospital-Los-Angeles-CA\\\">Hollywood
+        Community Hospital<\\/a> <br> 6245 De Longpre Avenue <br> Los Angeles CA 90028-9001
+        <br> <a href=\\\"/hospital/Hollywood-Community-Hospital-Los-Angeles-CA\\\">Get
+        details & directions<\\/a>',crossIcon);\n          marker.setMap(map);\n        \n
+        \         point = new google.maps.LatLng(34.031176,-118.479889);\n          marker
+        = createMarker(point,'<a href=\\\"/hospital/Saint-Johns-Health-Center-Santa-Monica-CA\\\">Saint
+        John\\'s Health Center<\\/a> <br> 1328 Twenty Second Street <br> Santa Monica
+        CA 90404-2091 <br> <a href=\\\"/hospital/Saint-Johns-Health-Center-Santa-Monica-CA\\\">Get
+        details & directions<\\/a>',crossIcon);\n          marker.setMap(map);\n        \n
+        \         point = new google.maps.LatLng(34.03605,-118.309202);\n          marker
+        = createMarker(point,'<a href=\\\"/hospital/Los-Angeles-Metro-Med-Center-Los-Angeles-CA\\\">Los
+        Angeles Metro Med Center<\\/a> <br> 2231 South Western Avenue <br> Los Angeles
+        CA 90018-1302 <br> <a href=\\\"/hospital/Los-Angeles-Metro-Med-Center-Los-Angeles-CA\\\">Get
+        details & directions<\\/a>',crossIcon);\n          marker.setMap(map);\n        \n
+        \         point = new google.maps.LatLng(34.027525,-118.486292);\n          marker
+        = createMarker(point,'<a href=\\\"/hospital/Santa-Monica-UCLA-Med-Center-Santa-Monica-CA\\\">Santa
+        Monica UCLA Med Center<\\/a> <br> 1250 16th Street <br> Santa Monica CA 90404
+        <br> <a href=\\\"/hospital/Santa-Monica-UCLA-Med-Center-Santa-Monica-CA\\\">Get
+        details & directions<\\/a>',crossIcon);\n          marker.setMap(map);\n        \n
+        \         point = new google.maps.LatLng(33.989168,-118.377707);\n          marker
+        = createMarker(point,'<a href=\\\"/hospital/Kindred-Hospital-Los-Angeles-Los-Angeles-CA\\\">Kindred
+        Hospital-Los Angeles<\\/a> <br> 5525 West Slauson Avenue <br> Los Angeles
+        CA 90056-1067 <br> <a href=\\\"/hospital/Kindred-Hospital-Los-Angeles-Los-Angeles-CA\\\">Get
+        details & directions<\\/a>',crossIcon);\n          marker.setMap(map);\n        \n
+        \         point = new google.maps.LatLng(34.098312,-118.295461);\n          marker
+        = createMarker(point,'<a href=\\\"/hospital/Kaiser-Foundation-Hospital-Sunset-Blvd-Los-Angeles-CA\\\">Kaiser
+        Foundation Hospital - Sunset Blvd<\\/a> <br> 4867 Sunset Boulevard <br> Los
+        Angeles CA 90027-5969 <br> <a href=\\\"/hospital/Kaiser-Foundation-Hospital-Sunset-Blvd-Los-Angeles-CA\\\">Get
+        details & directions<\\/a>',crossIcon);\n          marker.setMap(map);\n        \n
+        \         point = new google.maps.LatLng(34.095618,-118.291704);\n          marker
+        = createMarker(point,'<a href=\\\"/hospital/Hollywood-Presby-Medical-Ctr-Los-Angeles-CA\\\">Hollywood
+        Presby Medical Ctr<\\/a> <br> 1300 North Vermont Avenue <br> Los Angeles CA
+        90027-0069 <br> <a href=\\\"/hospital/Hollywood-Presby-Medical-Ctr-Los-Angeles-CA\\\">Get
+        details & directions<\\/a>',crossIcon);\n          marker.setMap(map);\n        \n
+        \         point = new google.maps.LatLng(34.098021,-118.290697);\n          marker
+        = createMarker(point,'<a href=\\\"/hospital/Childrens-Hospital-Los-Angeles-Los-Angeles-CA\\\">Childrens
+        Hospital Los Angeles<\\/a> <br> 4650 Sunset Boulevard <br> Los Angeles CA
+        90027-6062 <br> <a href=\\\"/hospital/Childrens-Hospital-Los-Angeles-Los-Angeles-CA\\\">Get
+        details & directions<\\/a>',crossIcon);\n          marker.setMap(map);\n        \n
+        \         point = new google.maps.LatLng(34.067153,-118.286385);\n          marker
+        = createMarker(point,'<a href=\\\"/hospital/Shriners-Hospitals-for-Children-Los-Angeles\\\">Shriners
+        Hospitals for Children<\\/a> <br> 3160 Geneva Street <br> Los Angeles CA 90020-1199
+        <br> <a href=\\\"/hospital/Shriners-Hospitals-for-Children-Los-Angeles\\\">Get
+        details & directions<\\/a>',crossIcon);\n          marker.setMap(map);\n        \n
+        \         point = new google.maps.LatLng(34.067548,-118.286046);\n          marker
+        = createMarker(point,'<a href=\\\"/hospital/Shriners-Hosps-for-Children-Los-Angeles-CA\\\">Shriners
+        Hosps for Children<\\/a> <br> 3160 Geneva Street <br> Los Angeles CA 90020-1199
+        <br> <a href=\\\"/hospital/Shriners-Hosps-for-Children-Los-Angeles-CA\\\">Get
+        details & directions<\\/a>',crossIcon);\n          marker.setMap(map);\n        \n
+        \         point = new google.maps.LatLng(34.159931,-118.448871);\n          marker
+        = createMarker(point,'<a href=\\\"/hospital/Sherman-Oaks-Hospital-Sherman-Oaks-CA\\\">Sherman
+        Oaks Hospital<\\/a> <br> 4929 Van Nuys Boulevard <br> Sherman Oaks CA 91403-1702
+        <br> <a href=\\\"/hospital/Sherman-Oaks-Hospital-Sherman-Oaks-CA\\\">Get details
+        & directions<\\/a>',crossIcon);\n          marker.setMap(map);\n        \n
+        \         point = new google.maps.LatLng(34.075223,-118.283786);\n          marker
+        = createMarker(point,'<a href=\\\"/hospital/Temple-Community-Hospital-Los-Angeles-CA\\\">Temple
+        Community Hospital<\\/a> <br> 235 North Hoover Street <br> Los Angeles CA
+        90004-3672 <br> <a href=\\\"/hospital/Temple-Community-Hospital-Los-Angeles-CA\\\">Get
+        details & directions<\\/a>',crossIcon);\n          marker.setMap(map);\n        \n
+        \         point = new google.maps.LatLng(33.981658,-118.439939);\n          marker
+        = createMarker(point,'<a href=\\\"/hospital/Centinela-Freeman-Med-Center-Marina-Del-Rey-CA\\\">Centinela
+        Freeman Med Center<\\/a> <br> 4650 Lincoln Boulevard <br> Marina Del Rey CA
+        90292-6360 <br> <a href=\\\"/hospital/Centinela-Freeman-Med-Center-Marina-Del-Rey-CA\\\">Get
+        details & directions<\\/a>',crossIcon);\n          marker.setMap(map);\n        \n
+        \         point = new google.maps.LatLng(34.155647,-118.327065);\n          marker
+        = createMarker(point,'<a href=\\\"/hospital/Providence-Saint-Joseph-Ctr-Burbank-CA\\\">Providence
+        Saint Joseph Ctr<\\/a> <br> 501 South Buena Vista Street <br> Burbank CA 91505-4866
+        <br> <a href=\\\"/hospital/Providence-Saint-Joseph-Ctr-Burbank-CA\\\">Get
+        details & directions<\\/a>',crossIcon);\n          marker.setMap(map);\n        \n
+        \         point = new google.maps.LatLng(34.063179,-118.273021);\n          marker
+        = createMarker(point,'<a href=\\\"/hospital/St-Vincent-Medical-Center-Los-Angeles-CA\\\">St
+        Vincent Medical Center<\\/a> <br> 2131 West Third Street <br> Los Angeles
+        CA 90057-7992 <br> <a href=\\\"/hospital/St-Vincent-Medical-Center-Los-Angeles-CA\\\">Get
+        details & directions<\\/a>',crossIcon);\n          marker.setMap(map);\n        \n
+        \         point = new google.maps.LatLng(34.156913,-118.486673);\n          marker
+        = createMarker(point,'<a href=\\\"/hospital/Encino-Tarzana-Reg-Med-Ctr-Encino-CA\\\">Encino-Tarzana
+        Reg Med Ctr<\\/a> <br> 16237 Ventura Boulevard <br> Encino CA 91436-2201 <br>
+        <a href=\\\"/hospital/Encino-Tarzana-Reg-Med-Ctr-Encino-CA\\\">Get details
+        & directions<\\/a>',crossIcon);\n          marker.setMap(map);\n        \n
+        \         point = new google.maps.LatLng(34.068855,-118.263313);\n          marker
+        = createMarker(point,'<a href=\\\"/hospital/City-of-Angels-Medical-Center-Los-Angeles-CA\\\">City
+        of Angels Medical Center<\\/a> <br> 1711 West Temple Street <br> Los Angeles
+        CA 90026 <br> <a href=\\\"/hospital/City-of-Angels-Medical-Center-Los-Angeles-CA\\\">Get
+        details & directions<\\/a>',crossIcon);\n          marker.setMap(map);\n        \n
+        \         point = new google.maps.LatLng(34.053369,-118.265352);\n          marker
+        = createMarker(point,'<a href=\\\"/hospital/Good-Samaritan-Hospital-Los-Angeles-CA\\\">Good
+        Samaritan Hospital<\\/a> <br> 1225 Wilshire Boulevard <br> Los Angeles CA
+        90017-1901 <br> <a href=\\\"/hospital/Good-Samaritan-Hospital-Los-Angeles-CA\\\">Get
+        details & directions<\\/a>',crossIcon);\n          marker.setMap(map);\n        \n
+        \         point = new google.maps.LatLng(33.966541,-118.344128);\n          marker
+        = createMarker(point,'<a href=\\\"/hospital/Centinela-Freeman-Med-Center-Inglewood-CA\\\">Centinela
+        Freeman Med Center<\\/a> <br> 333 North Prairie Avenue <br> Inglewood CA 90301-4514
+        <br> <a href=\\\"/hospital/Centinela-Freeman-Med-Center-Inglewood-CA\\\">Get
+        details & directions<\\/a>',crossIcon);\n          marker.setMap(map);\n        \n
+        \         point = new google.maps.LatLng(34.037228,-118.265401);\n          marker
+        = createMarker(point,'<a href=\\\"/hospital/California-Hospital-Med-Center-Los-Angeles-CA\\\">California
+        Hospital Med Center<\\/a> <br> 1401 South Grand Avenue <br> Los Angeles CA
+        90015-3010 <br> <a href=\\\"/hospital/California-Hospital-Med-Center-Los-Angeles-CA\\\">Get
+        details & directions<\\/a>',crossIcon);\n          marker.setMap(map);\n        \n
+        \         point = new google.maps.LatLng(34.084387,-118.256323);\n          marker
+        = createMarker(point,'<a href=\\\"/hospital/Gateways-Hosp-Mntl-Hlth-Ctr-Los-Angeles-CA\\\">Gateways
+        Hosp & Mntl Hlth Ctr<\\/a> <br> 1891 Effie Street <br> Los Angeles CA 90026-1711
+        <br> <a href=\\\"/hospital/Gateways-Hosp-Mntl-Hlth-Ctr-Los-Angeles-CA\\\">Get
+        details & directions<\\/a>',crossIcon);\n          marker.setMap(map);\n        \n
+        \         point = new google.maps.LatLng(34.073509,-118.24743);\n          marker
+        = createMarker(point,'<a href=\\\"/hospital/Barlow-Respiratory-Hospital-Los-Angeles-CA\\\">Barlow
+        Respiratory Hospital<\\/a> <br> 2000 Stadium Way <br> Los Angeles CA 90026-2696
+        <br> <a href=\\\"/hospital/Barlow-Respiratory-Hospital-Los-Angeles-CA\\\">Get
+        details & directions<\\/a>',crossIcon);\n          marker.setMap(map);\n        \n
+        \         point = new google.maps.LatLng(34.128368,-118.257611);\n          marker
+        = createMarker(point,'<a href=\\\"/hospital/Glendale-Mem-Hosp-Hlth-Ctr-Glendale-CA\\\">Glendale
+        Mem Hosp & Hlth Ctr<\\/a> <br> 1420 South Central Avenue <br> Glendale CA
+        91204-2594 <br> <a href=\\\"/hospital/Glendale-Mem-Hosp-Hlth-Ctr-Glendale-CA\\\">Get
+        details & directions<\\/a>',crossIcon);\n          marker.setMap(map);\n        \n
+        \         point = new google.maps.LatLng(34.194093,-118.462107);\n          marker
+        = createMarker(point,'<a href=\\\"/hospital/Valley-Presbyterian-Hospital-Van-Nuys-CA\\\">Valley
+        Presbyterian Hospital<\\/a> <br> 15107 Vanowen Street <br> Van Nuys CA 91405-4598
+        <br> <a href=\\\"/hospital/Valley-Presbyterian-Hospital-Van-Nuys-CA\\\">Get
+        details & directions<\\/a>',crossIcon);\n          marker.setMap(map);\n        \n
+        \         point = new google.maps.LatLng(33.949199,-118.348248);\n          marker
+        = createMarker(point,'<a href=\\\"/hospital/Centinela-Freeman-Med-Center-Hardy-Inglewood-CA\\\">Centinela
+        Freeman Med Center - Hardy<\\/a> <br> 555 East Hardy Street <br> Inglewood
+        CA 90301-4011 <br> <a href=\\\"/hospital/Centinela-Freeman-Med-Center-Hardy-Inglewood-CA\\\">Get
+        details & directions<\\/a>',crossIcon);\n          marker.setMap(map);\n        \n
+        \         point = new google.maps.LatLng(34.064704,-118.239092);\n          marker
+        = createMarker(point,'<a href=\\\"/hospital/Pacific-Alliance-Med-Center-Los-Angeles-CA\\\">Pacific
+        Alliance Med Center<\\/a> <br> 531 West College Street <br> Los Angeles CA
+        90012-2315 <br> <a href=\\\"/hospital/Pacific-Alliance-Med-Center-Los-Angeles-CA\\\">Get
+        details & directions<\\/a>',crossIcon);\n          marker.setMap(map);\n        \n
+        \         point = new google.maps.LatLng(34.05922,-118.231567);\n          marker
+        = createMarker(point,'<a href=\\\"/hospital/La-County-Central-Jail-Hosp-Los-Angeles-CA\\\">La
+        County Central Jail Hosp<\\/a> <br> 441 Bauchet Street <br> Los Angeles CA
+        90012-2994 <br> <a href=\\\"/hospital/La-County-Central-Jail-Hosp-Los-Angeles-CA\\\">Get
+        details & directions<\\/a>',crossIcon);\n          marker.setMap(map);\n        \n
+        \         point = new google.maps.LatLng(34.169898,-118.53142);\n          marker
+        = createMarker(point,'<a href=\\\"/hospital/Encino-Tarzana-Reg-Med-Center-Tarzana-CA\\\">Encino-Tarzana
+        Reg Med Center<\\/a> <br> 18321 Clark Street <br> Tarzana CA 91356-3521 <br>
+        <a href=\\\"/hospital/Encino-Tarzana-Reg-Med-Center-Tarzana-CA\\\">Get details
+        & directions<\\/a>',crossIcon);\n          marker.setMap(map);\n        \n
+        \         point = new google.maps.LatLng(34.219702,-118.430532);\n          marker
+        = createMarker(point,'<a href=\\\"/hospital/Kaiser-Foundation-Hospital-Panorama-City-CA\\\">Kaiser
+        Foundation Hospital<\\/a> <br> 13652 Cantara Street <br> Panorama City CA
+        91402-5497 <br> <a href=\\\"/hospital/Kaiser-Foundation-Hospital-Panorama-City-CA\\\">Get
+        details & directions<\\/a>',crossIcon);\n          marker.setMap(map);\n        \n
+        \         point = new google.maps.LatLng(34.050957,-118.21741);\n          marker
+        = createMarker(point,'<a href=\\\"/hospital/White-Memorial-Medical-Center-Los-Angeles-CA\\\">White
+        Memorial Medical Center<\\/a> <br> 1720 Cesar E Chavez Avenue <br> Los Angeles
+        CA 90033-2481 <br> <a href=\\\"/hospital/White-Memorial-Medical-Center-Los-Angeles-CA\\\">Get
+        details & directions<\\/a>',crossIcon);\n          marker.setMap(map);\n        \n
+        \         point = new google.maps.LatLng(34.221368,-118.456346);\n          marker
+        = createMarker(point,'<a href=\\\"/hospital/Mission-Community-Hospital-Panorama-City-CA\\\">Mission
+        Community Hospital<\\/a> <br> 14850 Roscoe Boulevard <br> Panorama City CA
+        91402 <br> <a href=\\\"/hospital/Mission-Community-Hospital-Panorama-City-CA\\\">Get
+        details & directions<\\/a>',crossIcon);\n          marker.setMap(map);\n        \n
+        \         point = new google.maps.LatLng(34.179797,-118.539686);\n          marker
+        = createMarker(point,'<a href=\\\"/hospital/Tarzana-Treatment-Center-Tarzana-CA\\\">Tarzana
+        Treatment Center<\\/a> <br> 18646 Oxnard Street <br> Tarzana CA 91356 <br>
+        <a href=\\\"/hospital/Tarzana-Treatment-Center-Tarzana-CA\\\">Get details
+        & directions<\\/a>',crossIcon);\n          marker.setMap(map);\n        \n
+        \         point = new google.maps.LatLng(34.059356,-118.209904);\n          marker
+        = createMarker(point,'<a href=\\\"/hospital/LAC-USC-Medical-Center-Los-Angeles-CA\\\">LAC/USC
+        Medical Center<\\/a> <br> 1200 North State Street <br> Los Angeles CA 90033-1029
+        <br> <a href=\\\"/hospital/LAC-USC-Medical-Center-Los-Angeles-CA\\\">Get details
+        & directions<\\/a>',crossIcon);\n          marker.setMap(map);\n        \n
+        \         point = new google.maps.LatLng(34.03992,-118.212396);\n          marker
+        = createMarker(point,'<a href=\\\"/hospital/Promise-Hospital-of-East-LA-Los-Angeles-CA\\\">Promise
+        Hospital of East LA<\\/a> <br> 443 South Soto Street <br> Los Angeles CA 90033-4398
+        <br> <a href=\\\"/hospital/Promise-Hospital-of-East-LA-Los-Angeles-CA\\\">Get
+        details & directions<\\/a>',crossIcon);\n          marker.setMap(map);\n        \n
+        \         point = new google.maps.LatLng(34.149398,-118.230568);\n          marker
+        = createMarker(point,'<a href=\\\"/hospital/Glendale-Adventist-Medical-Ctr-Glendale-CA\\\">Glendale
+        Adventist Medical Ctr<\\/a> <br> 1509 Wilson Terrace <br> Glendale CA 91206-4098
+        <br> <a href=\\\"/hospital/Glendale-Adventist-Medical-Ctr-Glendale-CA\\\">Get
+        details & directions<\\/a>',crossIcon);\n          marker.setMap(map);\n        \n
+        \         point = new google.maps.LatLng(34.061936,-118.204821);\n          marker
+        = createMarker(point,'<a href=\\\"/hospital/USC-Norris-Cancer-Ctr-Hosp-Los-Angeles-CA\\\">USC-Norris
+        Cancer Ctr & Hosp<\\/a> <br> 1441 Eastlake Avenue <br> Los Angeles CA 90033-3804
+        <br> <a href=\\\"/hospital/USC-Norris-Cancer-Ctr-Hosp-Los-Angeles-CA\\\">Get
+        details & directions<\\/a>',crossIcon);\n          marker.setMap(map);\n        \n
+        \         point = new google.maps.LatLng(34.062701,-118.202854);\n          marker
+        = createMarker(point,'<a href=\\\"/hospital/USC-University-Hospital-Los-Angeles-CA\\\">USC
+        University Hospital<\\/a> <br> 1500 San Pablo Street <br> Los Angeles CA 90033-4587
+        <br> <a href=\\\"/hospital/USC-University-Hospital-Los-Angeles-CA\\\">Get
+        details & directions<\\/a>',crossIcon);\n          marker.setMap(map);\n        \n
+        \         point = new google.maps.LatLng(34.241029,-118.395671);\n          marker
+        = createMarker(point,'<a href=\\\"/hospital/Pacifica-Hosp-of-the-Valley-Sun-Valley-CA\\\">Pacifica
+        Hosp of the Valley<\\/a> <br> 9449 San Fernando Road <br> Sun Valley CA 91352-1421
+        <br> <a href=\\\"/hospital/Pacifica-Hosp-of-the-Valley-Sun-Valley-CA\\\">Get
+        details & directions<\\/a>',crossIcon);\n          marker.setMap(map);\n        \n
+        \         point = new google.maps.LatLng(33.9893,-118.224391);\n          marker
+        = createMarker(point,'<a href=\\\"/hospital/Comm-Hosp-of-Huntington-Park-Huntington-Park-CA\\\">Comm
+        Hosp of Huntington Park<\\/a> <br> 2623 East Slauson Avenue <br> Huntington
+        Park CA 90255-2900 <br> <a href=\\\"/hospital/Comm-Hosp-of-Huntington-Park-Huntington-Park-CA\\\">Get
+        details & directions<\\/a>',crossIcon);\n          marker.setMap(map);\n        \n
+        \         point = new google.maps.LatLng(34.220732,-118.531799);\n          marker
+        = createMarker(point,'<a href=\\\"/hospital/Northridge-Hosp-Medical-Center-Northridge-CA\\\">Northridge
+        Hosp Medical Center<\\/a> <br> 18300 Roscoe Boulevard <br> Northridge CA 91328-4167
+        <br> <a href=\\\"/hospital/Northridge-Hosp-Medical-Center-Northridge-CA\\\">Get
+        details & directions<\\/a>',crossIcon);\n          marker.setMap(map);\n        \n
+        \         point = new google.maps.LatLng(34.172099,-118.588238);\n          marker
+        = createMarker(point,'<a href=\\\"/hospital/Kaiser-Foundation-Hospital-Woodland-Hills-CA\\\">Kaiser
+        Foundation Hospital<\\/a> <br> 5601 Desoto Avenue <br> Woodland Hills CA 91365-6701
+        <br> <a href=\\\"/hospital/Kaiser-Foundation-Hospital-Woodland-Hills-CA\\\">Get
+        details & directions<\\/a>',crossIcon);\n          marker.setMap(map);\n        \n
+        \         point = new google.maps.LatLng(34.019052,-118.186703);\n          marker
+        = createMarker(point,'<a href=\\\"/hospital/Los-Angeles-Community-Hospital-Los-Angeles-CA\\\">Los
+        Angeles Community Hospital<\\/a> <br> 4081 East Olympic Boulevard <br> Los
+        Angeles CA 90023-3330 <br> <a href=\\\"/hospital/Los-Angeles-Community-Hospital-Los-Angeles-CA\\\">Get
+        details & directions<\\/a>',crossIcon);\n          marker.setMap(map);\n        \n
+        \         point = new google.maps.LatLng(34.023768,-118.184176);\n          marker
+        = createMarker(point,'<a href=\\\"/hospital/East-Los-Angeles-Doctors-Hosp-Los-Angeles-CA\\\">East
+        Los Angeles Doctors Hosp<\\/a> <br> 4060 East Whittier Boulevard <br> Los
+        Angeles CA 90023-2526 <br> <a href=\\\"/hospital/East-Los-Angeles-Doctors-Hosp-Los-Angeles-CA\\\">Get
+        details & directions<\\/a>',crossIcon);\n          marker.setMap(map);\n        \n
+        \         point = new google.maps.LatLng(33.892466,-118.295174);\n          marker
+        = createMarker(point,'<a href=\\\"/hospital/Memorial-Hospital-of-Gardena-Gardena-CA\\\">Memorial
+        Hospital of Gardena<\\/a> <br> 1145 West Redondo Beach Blvd <br> Gardena CA
+        90247-3528 <br> <a href=\\\"/hospital/Memorial-Hospital-of-Gardena-Gardena-CA\\\">Get
+        details & directions<\\/a>',crossIcon);\n          marker.setMap(map);\n        \n
+        \         point = new google.maps.LatLng(33.923125,-118.239281);\n          marker
+        = createMarker(point,'<a href=\\\"/hospital/LAC-Martin-Luther-King-Hosp-Los-Angeles-CA\\\">LAC-Martin
+        Luther King Hosp<\\/a> <br> 12021 South Wilmington Avenue <br> Los Angeles
+        CA 90059-3019 <br> <a href=\\\"/hospital/LAC-Martin-Luther-King-Hosp-Los-Angeles-CA\\\">Get
+        details & directions<\\/a>',crossIcon);\n          marker.setMap(map);\n        \n
+        \         point = new google.maps.LatLng(34.205522,-118.215356);\n          marker
+        = createMarker(point,'<a href=\\\"/hospital/Verdugo-Hills-Hospital-Glendale-CA\\\">Verdugo
+        Hills Hospital<\\/a> <br> 1812 Verdugo Boulevard <br> Glendale CA 91208-1409
+        <br> <a href=\\\"/hospital/Verdugo-Hills-Hospital-Glendale-CA\\\">Get details
+        & directions<\\/a>',crossIcon);\n          marker.setMap(map);\n        \n
+        \         point = new google.maps.LatLng(33.890369,-118.297317);\n          marker
+        = createMarker(point,'<a href=\\\"/hospital/Community-Hospital-of-Gardena-Gardena-CA\\\">Community
+        Hospital of Gardena<\\/a> <br> 1246 West 155th Street <br> Gardena CA 90247-4011
+        <br> <a href=\\\"/hospital/Community-Hospital-of-Gardena-Gardena-CA\\\">Get
+        details & directions<\\/a>',crossIcon);\n          marker.setMap(map);\n        \n
+        \         point = new google.maps.LatLng(34.27935,-118.455289);\n          marker
+        = createMarker(point,'<a href=\\\"/hospital/Providence-Holy-Cross-Med-Ctr-San-Fernando-CA\\\">Providence
+        Holy Cross Med Ctr<\\/a> <br> 15031 Rinaldi Street <br> San Fernando CA 91346-9600
+        <br> <a href=\\\"/hospital/Providence-Holy-Cross-Med-Ctr-San-Fernando-CA\\\">Get
+        details & directions<\\/a>',crossIcon);\n          marker.setMap(map);\n        \n
+        \         point = new google.maps.LatLng(34.089722,-118.144867);\n          marker
+        = createMarker(point,'<a href=\\\"/hospital/Alhambra-Hospital-Medical-Ctr-Alhambra-CA\\\">Alhambra
+        Hospital Medical Ctr<\\/a> <br> 100 South Raymond Avenue <br> Alhambra CA
+        91801-3199 <br> <a href=\\\"/hospital/Alhambra-Hospital-Medical-Ctr-Alhambra-CA\\\">Get
+        details & directions<\\/a>',crossIcon);\n          marker.setMap(map);\n        \n
+        \         point = new google.maps.LatLng(34.15817,-118.635998);\n          marker
+        = createMarker(point,'<a href=\\\"/hospital/Motion-Picture-Tel-Hospital-Woodland-Hills-CA\\\">Motion
+        Picture & Tel Hospital<\\/a> <br> 23388 Mulholland Drive <br> Woodland Hills
+        CA 91364-2733 <br> <a href=\\\"/hospital/Motion-Picture-Tel-Hospital-Woodland-Hills-CA\\\">Get
+        details & directions<\\/a>',crossIcon);\n          marker.setMap(map);\n        \n
+        \         point = new google.maps.LatLng(34.135617,-118.152369);\n          marker
+        = createMarker(point,'<a href=\\\"/hospital/Huntington-Memorial-Hospital-Pasadena-CA\\\">Huntington
+        Memorial Hospital<\\/a> <br> 100 West California Boulevard <br> Pasadena CA
+        91105-3097 <br> <a href=\\\"/hospital/Huntington-Memorial-Hospital-Pasadena-CA\\\">Get
+        details & directions<\\/a>',crossIcon);\n          marker.setMap(map);\n        \n
+        \         point = new google.maps.LatLng(33.930782,-118.204032);\n          marker
+        = createMarker(point,'<a href=\\\"/hospital/St-Francis-Medical-Center-Lynwood-CA\\\">St
+        Francis Medical Center<\\/a> <br> 3630 East Imperial Highway <br> Lynwood
+        CA 90262-2636 <br> <a href=\\\"/hospital/St-Francis-Medical-Center-Lynwood-CA\\\">Get
+        details & directions<\\/a>',crossIcon);\n          marker.setMap(map);\n        \n
+        \         point = new google.maps.LatLng(34.050771,-118.137967);\n          marker
+        = createMarker(point,'<a href=\\\"/hospital/Monterey-Park-Hospital-Monterey-Park-CA\\\">Monterey
+        Park Hospital<\\/a> <br> 900 South Atlantic Boulevard <br> Monterey Park CA
+        91754-4780 <br> <a href=\\\"/hospital/Monterey-Park-Hospital-Monterey-Park-CA\\\">Get
+        details & directions<\\/a>',crossIcon);\n          marker.setMap(map);\n        \n
+        \         point = new google.maps.LatLng(34.203314,-118.629284);\n          marker
+        = createMarker(point,'<a href=\\\"/hospital/West-Hills-Hosp-Med-Center-Canoga-Park-CA\\\">West
+        Hills Hosp & Med Center<\\/a> <br> 7300 Medical Center Drive <br> Canoga Park
+        CA 91307-1902 <br> <a href=\\\"/hospital/West-Hills-Hosp-Med-Center-Canoga-Park-CA\\\">Get
+        details & directions<\\/a>',crossIcon);\n          marker.setMap(map);\n        \n
+        \         point = new google.maps.LatLng(34.067632,-118.123057);\n          marker
+        = createMarker(point,'<a href=\\\"/hospital/Garfield-Medical-Center-Monterey-Park-CA\\\">Garfield
+        Medical Center<\\/a> <br> 525 North Garfield Avenue <br> Monterey Park CA
+        91754-1205 <br> <a href=\\\"/hospital/Garfield-Medical-Center-Monterey-Park-CA\\\">Get
+        details & directions<\\/a>',crossIcon);\n          marker.setMap(map);\n        \n
+        \         point = new google.maps.LatLng(34.174919,-118.150569);\n          marker
+        = createMarker(point,'<a href=\\\"/hospital/Impact-Drug-Treatment-Center-Pasadena-CA\\\">Impact
+        Drug Treatment Center<\\/a> <br> 1680 North Fair Oaks Avenue <br> Pasadena
+        CA 91103-1642 <br> <a href=\\\"/hospital/Impact-Drug-Treatment-Center-Pasadena-CA\\\">Get
+        details & directions<\\/a>',crossIcon);\n          marker.setMap(map);\n        \n
+        \         point = new google.maps.LatLng(33.837673,-118.356967);\n          marker
+        = createMarker(point,'<a href=\\\"/hospital/Little-Company-of-Mary-Hosp-Torrance-CA\\\">Little
+        Company of Mary Hosp<\\/a> <br> 4101 Torrance Boulevard <br> Torrance CA 90503-4698
+        <br> <a href=\\\"/hospital/Little-Company-of-Mary-Hosp-Torrance-CA\\\">Get
+        details & directions<\\/a>',crossIcon);\n          marker.setMap(map);\n        \n
+        \         point = new google.maps.LatLng(34.102297,-118.105217);\n          marker
+        = createMarker(point,'<a href=\\\"/hospital/San-Gabriel-Valley-Med-Ctr-San-Gabriel-CA\\\">San
+        Gabriel Valley Med Ctr<\\/a> <br> 438 West Las Tunas Drive <br> San Gabriel
+        CA 91776-1216 <br> <a href=\\\"/hospital/San-Gabriel-Valley-Med-Ctr-San-Gabriel-CA\\\">Get
+        details & directions<\\/a>',crossIcon);\n          marker.setMap(map);\n        \n
+        \         point = new google.maps.LatLng(33.927293,-118.157449);\n          marker
+        = createMarker(point,'<a href=\\\"/hospital/Rancho-Los-Amigos-Center-Downey-CA\\\">Rancho
+        Los Amigos Center<\\/a> <br> 7601 East Imperial Highway <br> Downey CA 90242-3496
+        <br> <a href=\\\"/hospital/Rancho-Los-Amigos-Center-Downey-CA\\\">Get details
+        & directions<\\/a>',crossIcon);\n          marker.setMap(map);\n        \n
+        \         point = new google.maps.LatLng(34.324491,-118.446737);\n          marker
+        = createMarker(point,'<a href=\\\"/hospital/LAC-Olive-View-UCLA-Med-Ctr-Sylmar-CA\\\">LAC-Olive
+        View-UCLA Med Ctr<\\/a> <br> 14445 Olive View Drive <br> Sylmar CA 91342-1495
+        <br> <a href=\\\"/hospital/LAC-Olive-View-UCLA-Med-Ctr-Sylmar-CA\\\">Get details
+        & directions<\\/a>',crossIcon);\n          marker.setMap(map);\n        \n
+        \         point = new google.maps.LatLng(34.015998,-118.100906);\n          marker
+        = createMarker(point,'<a href=\\\"/hospital/Beverly-Hospital-Montebello-CA\\\">Beverly
+        Hospital<\\/a> <br> 309 West Beverly Boulevard <br> Montebello CA 90640-4308
+        <br> <a href=\\\"/hospital/Beverly-Hospital-Montebello-CA\\\">Get details
+        & directions<\\/a>',crossIcon);\n          marker.setMap(map);\n        \n
+        \         point = new google.maps.LatLng(33.831451,-118.292798);\n          marker
+        = createMarker(point,'<a href=\\\"/hospital/LAC-Harbor-UCLA-Med-Center-Torrance-CA\\\">LAC-Harbor-UCLA
+        Med Center<\\/a> <br> 1000 West Carson Street <br> Torrance CA 90502-2004
+        <br> <a href=\\\"/hospital/LAC-Harbor-UCLA-Med-Center-Torrance-CA\\\">Get
+        details & directions<\\/a>',crossIcon);\n          marker.setMap(map);\n        \n
+        \         point = new google.maps.LatLng(33.935059,-118.131925);\n          marker
+        = createMarker(point,'<a href=\\\"/hospital/Downey-Regional-Medical-Center-Downey-CA\\\">Downey
+        Regional Medical Center<\\/a> <br> 11500 Brookshire Avenue <br> Downey CA
+        90241-4917 <br> <a href=\\\"/hospital/Downey-Regional-Medical-Center-Downey-CA\\\">Get
+        details & directions<\\/a>',crossIcon);\n          marker.setMap(map);\n        \n
+        \         point = new google.maps.LatLng(33.812688,-118.344125);\n          marker
+        = createMarker(point,'<a href=\\\"/hospital/Torrance-Memorial-Med-Center-Torrance-CA\\\">Torrance
+        Memorial Med Center<\\/a> <br> 3330 Lomita Boulevard <br> Torrance CA 90505-5002
+        <br> <a href=\\\"/hospital/Torrance-Memorial-Med-Center-Torrance-CA\\\">Get
+        details & directions<\\/a>',crossIcon);\n          marker.setMap(map);\n        \n
+        \         point = new google.maps.LatLng(34.14208,-118.090286);\n          marker
+        = createMarker(point,'<a href=\\\"/hospital/Aurora-Las-Encinas-Hospital-Pasadena-CA\\\">Aurora
+        Las Encinas Hospital<\\/a> <br> 2900 East Del Mar Boulevard <br> Pasadena
+        CA 91107-4399 <br> <a href=\\\"/hospital/Aurora-Las-Encinas-Hospital-Pasadena-CA\\\">Get
+        details & directions<\\/a>',crossIcon);\n          marker.setMap(map);\n        \n
+        \         point = new google.maps.LatLng(33.808831,-118.344016);\n          marker
+        = createMarker(point,'<a href=\\\"/hospital/Del-Amo-Hospital-Torrance-CA\\\">Del
+        Amo Hospital<\\/a> <br> 23700 Camino Del Sol <br> Torrance CA 90505-5000 <br>
+        <a href=\\\"/hospital/Del-Amo-Hospital-Torrance-CA\\\">Get details & directions<\\/a>',crossIcon);\n
+        \         marker.setMap(map);\n        \n          point = new google.maps.LatLng(34.088065,-118.073514);\n
+        \         marker = createMarker(point,'<a href=\\\"/hospital/Alhambra-Hospital-Rosemead-CA\\\">Alhambra
+        Hospital<\\/a> <br> 4619 North Rosemead Boulevard <br> Rosemead CA 91770-1478
+        <br> <a href=\\\"/hospital/Alhambra-Hospital-Rosemead-CA\\\">Get details &
+        directions<\\/a>',crossIcon);\n          marker.setMap(map);\n        \n          point
+        = new google.maps.LatLng(33.88498,-118.161534);\n          marker = createMarker(point,'<a
+        href=\\\"/hospital/Promise-Hospital-of-East-LA-Paramount-CA\\\">Promise Hospital
+        of East LA<\\/a> <br> 16453 South Colorado Avenue <br> Paramount CA 90723-5000
+        <br> <a href=\\\"/hospital/Promise-Hospital-of-East-LA-Paramount-CA\\\">Get
+        details & directions<\\/a>',crossIcon);\n          marker.setMap(map);\n        \n
+        \         point = new google.maps.LatLng(33.903999,-118.133906);\n          marker
+        = createMarker(point,'<a href=\\\"/hospital/Kaiser-Foundation-Hospital-Bellflower-CA\\\">Kaiser
+        Foundation Hospital<\\/a> <br> 9400 East Rosecrans Avenue <br> Bellflower
+        CA 90706-2246 <br> <a href=\\\"/hospital/Kaiser-Foundation-Hospital-Bellflower-CA\\\">Get
+        details & directions<\\/a>',crossIcon);\n          marker.setMap(map);\n        \n
+        \         point = new google.maps.LatLng(34.047766,-118.043436);\n          marker
+        = createMarker(point,'<a href=\\\"/hospital/Greater-El-Monte-Comm-Hospital-El-Monte-CA\\\">Greater
+        El Monte Comm Hospital<\\/a> <br> 1701 Santa Anita Avenue <br> El Monte CA
+        91733-3411 <br> <a href=\\\"/hospital/Greater-El-Monte-Comm-Hospital-El-Monte-CA\\\">Get
+        details & directions<\\/a>',crossIcon);\n          marker.setMap(map);\n        \n
+        \         point = new google.maps.LatLng(33.912938,-118.099096);\n          marker
+        = createMarker(point,'<a href=\\\"/hospital/Coast-Plaza-Doctors-Hospital-Norwalk-CA\\\">Coast
+        Plaza Doctors Hospital<\\/a> <br> 13100 Studebaker Road <br> Norwalk CA 90650-2531
+        <br> <a href=\\\"/hospital/Coast-Plaza-Doctors-Hospital-Norwalk-CA\\\">Get
+        details & directions<\\/a>',crossIcon);\n          marker.setMap(map);\n        \n
+        \         point = new google.maps.LatLng(33.789353,-118.293805);\n          marker
+        = createMarker(point,'<a href=\\\"/hospital/Kaiser-Foundation-Hospital-Harbor-City-CA\\\">Kaiser
+        Foundation Hospital<\\/a> <br> 25825 South Vermont Avenue <br> Harbor City
+        CA 90710-3599 <br> <a href=\\\"/hospital/Kaiser-Foundation-Hospital-Harbor-City-CA\\\">Get
+        details & directions<\\/a>',crossIcon);\n          marker.setMap(map);\n        \n
+        \         point = new google.maps.LatLng(33.860094,-118.149056);\n          marker
+        = createMarker(point,'<a href=\\\"/hospital/Lakewood-Regional-Medical-Ctr-Lakewood-CA\\\">Lakewood
+        Regional Medical Ctr<\\/a> <br> 3700 East South Street <br> Lakewood CA 90712-1498
+        <br> <a href=\\\"/hospital/Lakewood-Regional-Medical-Ctr-Lakewood-CA\\\">Get
+        details & directions<\\/a>',crossIcon);\n          marker.setMap(map);\n        \n
+        \         point = new google.maps.LatLng(33.874604,-118.130804);\n          marker
+        = createMarker(point,'<a href=\\\"/hospital/Bellflower-Medical-Center-Bellflower-CA\\\">Bellflower
+        Medical Center<\\/a> <br> 9542 East Artesia Boulevard <br> Bellflower CA 90706-6511
+        <br> <a href=\\\"/hospital/Bellflower-Medical-Center-Bellflower-CA\\\">Get
+        details & directions<\\/a>',crossIcon);\n          marker.setMap(map);\n        \n
+        \         point = new google.maps.LatLng(34.133715,-118.041315);\n          marker
+        = createMarker(point,'<a href=\\\"/hospital/Methodist-Hosp-of-Southern-CA-Arcadia-CA\\\">Methodist
+        Hosp of Southern CA<\\/a> <br> 300 West Huntington Drive <br> Arcadia CA 91007-3473
+        <br> <a href=\\\"/hospital/Methodist-Hosp-of-Southern-CA-Arcadia-CA\\\">Get
+        details & directions<\\/a>',crossIcon);\n          marker.setMap(map);\n        \n
+        \         point = new google.maps.LatLng(33.885109,-118.102764);\n          marker
+        = createMarker(point,'<a href=\\\"/hospital/College-Hospital-Cerritos-CA\\\">College
+        Hospital<\\/a> <br> 10802 College Place <br> Cerritos CA 90703-1579 <br> <a
+        href=\\\"/hospital/College-Hospital-Cerritos-CA\\\">Get details & directions<\\/a>',crossIcon);\n
+        \         marker.setMap(map);\n        \n          point = new google.maps.LatLng(33.967588,-118.047888);\n
+        \         marker = createMarker(point,'<a href=\\\"/hospital/Presbyterian-Intercomm-Hosp-Whittier-CA\\\">Presbyterian
+        Intercomm Hosp<\\/a> <br> 12401 Washington Boulevard <br> Whittier CA 90602-1099
+        <br> <a href=\\\"/hospital/Presbyterian-Intercomm-Hosp-Whittier-CA\\\">Get
+        details & directions<\\/a>',crossIcon);\n          marker.setMap(map);\n        \n
+        \         point = new google.maps.LatLng(33.924047,-118.06412);\n          marker
+        = createMarker(point,'<a href=\\\"/hospital/Metropolitan-State-Hospital-Norwalk-CA\\\">Metropolitan
+        State Hospital<\\/a> <br> 11401 Bloomfield Avenue <br> Norwalk CA 90650 <br>
+        <a href=\\\"/hospital/Metropolitan-State-Hospital-Norwalk-CA\\\">Get details
+        & directions<\\/a>',crossIcon);\n          marker.setMap(map);\n        \n
+        \         point = new google.maps.LatLng(33.807612,-118.193534);\n          marker
+        = createMarker(point,'<a href=\\\"/hospital/Pacific-Hospital-of-Long-Beach-Long-Beach-CA\\\">Pacific
+        Hospital of Long Beach<\\/a> <br> 2776 Pacific Avenue <br> Long Beach CA 90806-2699
+        <br> <a href=\\\"/hospital/Pacific-Hospital-of-Long-Beach-Long-Beach-CA\\\">Get
+        details & directions<\\/a>',crossIcon);\n          marker.setMap(map);\n        \n
+        \         point = new google.maps.LatLng(33.808126,-118.185113);\n          marker
+        = createMarker(point,'<a href=\\\"/hospital/Long-Beach-Memorial-Med-Ctr-Long-Beach-CA\\\">Long
+        Beach Memorial Med Ctr<\\/a> <br> 2801 Atlantic Avenue <br> Long Beach CA
+        90806-1737 <br> <a href=\\\"/hospital/Long-Beach-Memorial-Med-Ctr-Long-Beach-CA\\\">Get
+        details & directions<\\/a>',crossIcon);\n          marker.setMap(map);\n        \n
+        \         point = new google.maps.LatLng(33.808126,-118.185113);\n          marker
+        = createMarker(point,'<a href=\\\"/hospital/Miller-Childrens-Hospital-Long-Beach-CA\\\">Miller
+        Children\\'s Hospital<\\/a> <br> 2801 Atlantic Avenue <br> Long Beach CA 90806
+        <br> <a href=\\\"/hospital/Miller-Childrens-Hospital-Long-Beach-CA\\\">Get
+        details & directions<\\/a>',crossIcon);\n          marker.setMap(map);\n        \n
+        \         point = new google.maps.LatLng(33.789322,-118.196559);\n          marker
+        = createMarker(point,'<a href=\\\"/hospital/Redgate-Memorial-Hospital-Long-Beach-CA\\\">Redgate
+        Memorial Hospital<\\/a> <br> 1775 Chestnut Avenue <br> Long Beach CA 90813-1674
+        <br> <a href=\\\"/hospital/Redgate-Memorial-Hospital-Long-Beach-CA\\\">Get
+        details & directions<\\/a>',crossIcon);\n          marker.setMap(map);\n        \n
+        \         point = new google.maps.LatLng(33.77984,-118.186523);\n          marker
+        = createMarker(point,'<a href=\\\"/hospital/St-Mary-Medical-Center-Long-Beach-CA\\\">St
+        Mary Medical Center<\\/a> <br> 1050 Linden Avenue <br> Long Beach CA 90813
+        <br> <a href=\\\"/hospital/St-Mary-Medical-Center-Long-Beach-CA\\\">Get details
+        & directions<\\/a>',crossIcon);\n          marker.setMap(map);\n        \n
+        \         point = new google.maps.LatLng(34.063614,-117.985824);\n          marker
+        = createMarker(point,'<a href=\\\"/hospital/Kaiser-Foundation-Hospital-Baldwin-Park-CA\\\">Kaiser
+        Foundation Hospital<\\/a> <br> 1011 Baldwin Park Boulevard <br> Baldwin Park
+        CA 91706-5806 <br> <a href=\\\"/hospital/Kaiser-Foundation-Hospital-Baldwin-Park-CA\\\">Get
+        details & directions<\\/a>',crossIcon);\n          marker.setMap(map);\n        \n
+        \         point = new google.maps.LatLng(33.738001,-118.305709);\n          marker
+        = createMarker(point,'<a href=\\\"/hospital/Little-Company-of-Mary-San-Pedro-CA\\\">Little
+        Company of Mary<\\/a> <br> 1300 West Seventh Street <br> San Pedro CA 90732-3505
+        <br> <a href=\\\"/hospital/Little-Company-of-Mary-San-Pedro-CA\\\">Get details
+        & directions<\\/a>',crossIcon);\n          marker.setMap(map);\n        \n
+        \         point = new google.maps.LatLng(34.396091,-118.553742);\n          marker
+        = createMarker(point,'<a href=\\\"/hospital/Henry-Mayo-Newhall-Mem-Hosp-Valencia-CA\\\">Henry
+        Mayo Newhall Mem Hosp<\\/a> <br> 23845 Mcbean Parkway <br> Valencia CA 91355-2083
+        <br> <a href=\\\"/hospital/Henry-Mayo-Newhall-Mem-Hosp-Valencia-CA\\\">Get
+        details & directions<\\/a>',crossIcon);\n          marker.setMap(map);\n        \n
+        \         point = new google.maps.LatLng(33.951546,-118.004419);\n          marker
+        = createMarker(point,'<a href=\\\"/hospital/Whittier-Hospital-Medical-Ctr-Whittier-CA\\\">Whittier
+        Hospital Medical Ctr<\\/a> <br> 9080 Colima Road <br> Whittier CA 90605-1600
+        <br> <a href=\\\"/hospital/Whittier-Hospital-Medical-Ctr-Whittier-CA\\\">Get
+        details & directions<\\/a>',crossIcon);\n          marker.setMap(map);\n        \n
+        \         point = new google.maps.LatLng(33.788668,-118.145754);\n          marker
+        = createMarker(point,'<a href=\\\"/hospital/Community-Hospital-Long-Beach-Long-Beach-CA\\\">Community
+        Hospital Long Beach<\\/a> <br> 1720 Termino Avenue <br> Long Beach CA 90804-2180
+        <br> <a href=\\\"/hospital/Community-Hospital-Long-Beach-Long-Beach-CA\\\">Get
+        details & directions<\\/a>',crossIcon);\n          marker.setMap(map);\n        \n
+        \         point = new google.maps.LatLng(34.289386,-118.744064);\n          marker
+        = createMarker(point,'<a href=\\\"/hospital/Simi-Valley-Hosp-Hlth-Care-Simi-Valley-CA\\\">Simi
+        Valley Hosp & Hlth Care<\\/a> <br> 2975 North Sycamore Drive <br> Simi Valley
+        CA 93065-1201 <br> <a href=\\\"/hospital/Simi-Valley-Hosp-Hlth-Care-Simi-Valley-CA\\\">Get
+        details & directions<\\/a>',crossIcon);\n          marker.setMap(map);\n        \n
+        \         point = new google.maps.LatLng(33.833682,-118.081644);\n          marker
+        = createMarker(point,'<a href=\\\"/hospital/Tri-City-Regional-Medical-Ctr-Hawaiian-Gardens-CA\\\">Tri-City
+        Regional Medical Ctr<\\/a> <br> 21530 South Pioneer Boulevard <br> Hawaiian
+        Gardens CA 90716 <br> <a href=\\\"/hospital/Tri-City-Regional-Medical-Ctr-Hawaiian-Gardens-CA\\\">Get
+        details & directions<\\/a>',crossIcon);\n          marker.setMap(map);\n        \n
+        \         point = new google.maps.LatLng(33.917029,-118.013323);\n          marker
+        = createMarker(point,'<a href=\\\"/hospital/Kindred-Hospital-La-Mirada-La-Mirada-CA\\\">Kindred
+        Hospital - La Mirada<\\/a> <br> 14900 East Imperial Highway <br> La Mirada
+        CA 90638 <br> <a href=\\\"/hospital/Kindred-Hospital-La-Mirada-La-Mirada-CA\\\">Get
+        details & directions<\\/a>',crossIcon);\n          marker.setMap(map);\n        \n
+        \         point = new google.maps.LatLng(34.132148,-117.974109);\n          marker
+        = createMarker(point,'<a href=\\\"/hospital/City-of-Hope-Natl-Medical-Ctr-Duarte-CA\\\">City
+        of Hope Natl Medical Ctr<\\/a> <br> 1500 East Duarte Road <br> Duarte CA 91010-3012
+        <br> <a href=\\\"/hospital/City-of-Hope-Natl-Medical-Ctr-Duarte-CA\\\">Get
+        details & directions<\\/a>',crossIcon);\n          marker.setMap(map);\n        \n
+        \         point = new google.maps.LatLng(34.06387,-117.967974);\n          marker
+        = createMarker(point,'<a href=\\\"/hospital/Vista-Specialty-Hospital-Baldwin-Park-CA\\\">Vista
+        Specialty Hospital<\\/a> <br> 14148 East Francisquito Avenue <br> Baldwin
+        Park CA 91706 <br> <a href=\\\"/hospital/Vista-Specialty-Hospital-Baldwin-Park-CA\\\">Get
+        details & directions<\\/a>',crossIcon);\n          marker.setMap(map);\n        \n
+        \         point = new google.maps.LatLng(33.847365,-118.037426);\n          marker
+        = createMarker(point,'<a href=\\\"/hospital/La-Palma-Intercommunity-Hosp-La-Palma-CA\\\">La
+        Palma Intercommunity Hosp<\\/a> <br> 7901 Walker Street <br> La Palma CA 90623-1722
+        <br> <a href=\\\"/hospital/La-Palma-Intercommunity-Hosp-La-Palma-CA\\\">Get
+        details & directions<\\/a>',crossIcon);\n          marker.setMap(map);\n        \n
+        \         point = new google.maps.LatLng(34.062807,-117.944894);\n          marker
+        = createMarker(point,'<a href=\\\"/hospital/Citrus-Valley-Medical-Center-West-Covina-CA\\\">Citrus
+        Valley Medical Center<\\/a> <br> 1115 South Sunset Avenue <br> West Covina
+        CA 91790-3940 <br> <a href=\\\"/hospital/Citrus-Valley-Medical-Center-West-Covina-CA\\\">Get
+        details & directions<\\/a>',crossIcon);\n          marker.setMap(map);\n        \n
+        \         point = new google.maps.LatLng(34.070955,-117.944214);\n          marker
+        = createMarker(point,'<a href=\\\"/hospital/Doctors-Hosp-of-West-Covina-West-Covina-CA\\\">Doctors
+        Hosp of West Covina<\\/a> <br> 725 South Orange Avenue <br> West Covina CA
+        91790-2614 <br> <a href=\\\"/hospital/Doctors-Hosp-of-West-Covina-West-Covina-CA\\\">Get
+        details & directions<\\/a>',crossIcon);\n          marker.setMap(map);\n        \n
+        \         point = new google.maps.LatLng(33.775434,-118.11982);\n          marker
+        = createMarker(point,'<a href=\\\"/hospital/VA-Long-Beach-Healthcare-Syst-Long-Beach-CA\\\">VA
+        Long Beach Healthcare Syst<\\/a> <br> 5901 East Seventh Street <br> Long Beach
+        CA 90822-5201 <br> <a href=\\\"/hospital/VA-Long-Beach-Healthcare-Syst-Long-Beach-CA\\\">Get
+        details & directions<\\/a>',crossIcon);\n          marker.setMap(map);\n        \n
+        \         point = new google.maps.LatLng(33.803299,-118.067277);\n          marker
+        = createMarker(point,'<a href=\\\"/hospital/Los-Alamitos-Medical-Center-Los-Alamitos-CA\\\">Los
+        Alamitos Medical Center<\\/a> <br> 3751 Katella Avenue <br> Los Alamitos CA
+        90720-3164 <br> <a href=\\\"/hospital/Los-Alamitos-Medical-Center-Los-Alamitos-CA\\\">Get
+        details & directions<\\/a>',crossIcon);\n          marker.setMap(map);\n        \n
+        \         point = new google.maps.LatLng(34.087398,-117.916766);\n          marker
+        = createMarker(point,'<a href=\\\"/hospital/Kindred-Hospital-San-Gabriel-West-Covina-CA\\\">Kindred
+        Hospital San Gabriel<\\/a> <br> 845 North Lark Ellen Avenue <br> West Covina
+        CA 91791-1069 <br> <a href=\\\"/hospital/Kindred-Hospital-San-Gabriel-West-Covina-CA\\\">Get
+        details & directions<\\/a>',crossIcon);\n          marker.setMap(map);\n        \n
+        \         point = new google.maps.LatLng(34.174386,-118.869782);\n          marker
+        = createMarker(point,'<a href=\\\"/hospital/Thousand-Oaks-Surgical-Hosp-Thousand-Oaks-CA\\\">Thousand
+        Oaks Surgical Hosp<\\/a> <br> 401 East Rolling Oaks Drive <br> Thousand Oaks
+        CA 91361 <br> <a href=\\\"/hospital/Thousand-Oaks-Surgical-Hosp-Thousand-Oaks-CA\\\">Get
+        details & directions<\\/a>',crossIcon);\n          marker.setMap(map);\n        \n
+        \         point = new google.maps.LatLng(33.817232,-118.007271);\n          marker
+        = createMarker(point,'<a href=\\\"/hospital/Anaheim-General-Hospital-Anaheim-CA\\\">Anaheim
+        General Hospital<\\/a> <br> 3350 West Ball Road <br> Anaheim CA 92804-3799
+        <br> <a href=\\\"/hospital/Anaheim-General-Hospital-Anaheim-CA\\\">Get details
+        & directions<\\/a>',crossIcon);\n          marker.setMap(map);\n        \n
+        \         point = new google.maps.LatLng(33.824871,-117.995113);\n          marker
+        = createMarker(point,'<a href=\\\"/hospital/West-Anaheim-Medical-Center-Anaheim-CA\\\">West
+        Anaheim Medical Center<\\/a> <br> 3033 West Orange Avenue <br> Anaheim CA
+        92804-3184 <br> <a href=\\\"/hospital/West-Anaheim-Medical-Center-Anaheim-CA\\\">Get
+        details & directions<\\/a>',crossIcon);\n          marker.setMap(map);\n        \n
+        \         point = new google.maps.LatLng(34.089886,-117.892805);\n          marker
+        = createMarker(point,'<a href=\\\"/hospital/Citrus-Valley-Medical-Center-Covina-CA\\\">Citrus
+        Valley Medical Center<\\/a> <br> 210 West San Bernardino Road <br> Covina
+        CA 91723-1901 <br> <a href=\\\"/hospital/Citrus-Valley-Medical-Center-Covina-CA\\\">Get
+        details & directions<\\/a>',crossIcon);\n          marker.setMap(map);\n        \n
+        \         point = new google.maps.LatLng(34.206452,-118.883205);\n          marker
+        = createMarker(point,'<a href=\\\"/hospital/Los-Robles-Hosp-Med-Center-Thousand-Oaks-CA\\\">Los
+        Robles Hosp & Med Center<\\/a> <br> 215 West Janss Road <br> Thousand Oaks
+        CA 91360-1847 <br> <a href=\\\"/hospital/Los-Robles-Hosp-Med-Center-Thousand-Oaks-CA\\\">Get
+        details & directions<\\/a>',crossIcon);\n          marker.setMap(map);\n        \n
+        \         point = new google.maps.LatLng(33.893496,-117.927919);\n          marker
+        = createMarker(point,'<a href=\\\"/hospital/St-Jude-Medical-Center-Fullerton-CA\\\">St
+        Jude Medical Center<\\/a> <br> 101 East Valencia Mesa Drive <br> Fullerton
+        CA 92835-3809 <br> <a href=\\\"/hospital/St-Jude-Medical-Center-Fullerton-CA\\\">Get
+        details & directions<\\/a>',crossIcon);\n          marker.setMap(map);\n        \n
+        \         point = new google.maps.LatLng(33.933717,-117.893617);\n          marker
+        = createMarker(point,'<a href=\\\"/hospital/Kindred-Hospital-Brea-Brea-CA\\\">Kindred
+        Hospital-Brea<\\/a> <br> 875 North Brea Boulevard <br> Brea CA 92821-2606
+        <br> <a href=\\\"/hospital/Kindred-Hospital-Brea-Brea-CA\\\">Get details &
+        directions<\\/a>',crossIcon);\n          marker.setMap(map);\n        \n          point
+        = new google.maps.LatLng(33.847219,-117.932273);\n          marker = createMarker(point,'<a
+        href=\\\"/hospital/Anaheim-Memorial-Medical-Ctr-Anaheim-CA\\\">Anaheim Memorial
+        Medical Ctr<\\/a> <br> 1111 West La Palma Avenue <br> Anaheim CA 92801-2881
+        <br> <a href=\\\"/hospital/Anaheim-Memorial-Medical-Ctr-Anaheim-CA\\\">Get
+        details & directions<\\/a>',crossIcon);\n          marker.setMap(map);\n        \n
+        \         point = new google.maps.LatLng(33.762378,-117.995228);\n          marker
+        = createMarker(point,'<a href=\\\"/hospital/Kindred-Hospital-Westminster-Westminster-CA\\\">Kindred
+        Hospital-Westminster<\\/a> <br> 200 Hospital Circle <br> Westminster CA 92683-3910
+        <br> <a href=\\\"/hospital/Kindred-Hospital-Westminster-Westminster-CA\\\">Get
+        details & directions<\\/a>',crossIcon);\n          marker.setMap(map);\n        \n
+        \         point = new google.maps.LatLng(33.82037,-117.909026);\n          marker
+        = createMarker(point,'<a href=\\\"/hospital/Western-Medical-Center-Anaheim-Anaheim-CA\\\">Western
+        Medical Center Anaheim<\\/a> <br> 1025 South Anaheim Boulevard <br> Anaheim
+        CA 92805-5806 <br> <a href=\\\"/hospital/Western-Medical-Center-Anaheim-Anaheim-CA\\\">Get
+        details & directions<\\/a>',crossIcon);\n          marker.setMap(map);\n        \n
+        \         point = new google.maps.LatLng(33.704379,-117.988923);\n          marker
+        = createMarker(point,'<a href=\\\"/hospital/Huntington-Beach-Hospital-Huntington-Beach-CA\\\">Huntington
+        Beach Hospital<\\/a> <br> 17772 Beach Boulevard <br> Huntington Beach CA 92647-6819
+        <br> <a href=\\\"/hospital/Huntington-Beach-Hospital-Huntington-Beach-CA\\\">Get
+        details & directions<\\/a>',crossIcon);\n          marker.setMap(map);\n        \n
+        \         point = new google.maps.LatLng(33.774573,-117.912936);\n          marker
+        = createMarker(point,'<a href=\\\"/hospital/Garden-Grove-Hosp-Med-Ctr-Garden-Grove-CA\\\">Garden
+        Grove Hosp & Med Ctr<\\/a> <br> 12601 Garden Grove Boulevard <br> Garden Grove
+        CA 92843-1908 <br> <a href=\\\"/hospital/Garden-Grove-Hosp-Med-Ctr-Garden-Grove-CA\\\">Get
+        details & directions<\\/a>',crossIcon);\n          marker.setMap(map);\n        \n
+        \         point = new google.maps.LatLng(33.788728,-117.890581);\n          marker
+        = createMarker(point,'<a href=\\\"/hospital/Univ-of-CA-Irvine-Med-Ctr-Orange-CA\\\">Univ
+        of CA Irvine Med Ctr<\\/a> <br> 101 The City Drive <br> Orange CA 92868-3298
+        <br> <a href=\\\"/hospital/Univ-of-CA-Irvine-Med-Ctr-Orange-CA\\\">Get details
+        & directions<\\/a>',crossIcon);\n          marker.setMap(map);\n        \n
+        \         point = new google.maps.LatLng(33.70155,-117.956551);\n          marker
+        = createMarker(point,'<a href=\\\"/hospital/Orange-Coast-Memorial-Med-Ctr-Fountain-Valley-CA\\\">Orange
+        Coast Memorial Med Ctr<\\/a> <br> 9920 Talbert Avenue <br> Fountain Valley
+        CA 92708-5153 <br> <a href=\\\"/hospital/Orange-Coast-Memorial-Med-Ctr-Fountain-Valley-CA\\\">Get
+        details & directions<\\/a>',crossIcon);\n          marker.setMap(map);\n        \n
+        \         point = new google.maps.LatLng(33.760991,-117.891704);\n          marker
+        = createMarker(point,'<a href=\\\"/hospital/Kindred-Hospital-Santa-Ana-Santa-Ana-CA\\\">Kindred
+        Hospital Santa Ana<\\/a> <br> 1901 North College Avenue <br> Santa Ana CA
+        92706-2334 <br> <a href=\\\"/hospital/Kindred-Hospital-Santa-Ana-Santa-Ana-CA\\\">Get
+        details & directions<\\/a>',crossIcon);\n          marker.setMap(map);\n        \n
+        \         point = new google.maps.LatLng(33.714897,-117.936874);\n          marker
+        = createMarker(point,'<a href=\\\"/hospital/Fountain-Valley-Reg-Hosp-Fountain-Valley-CA\\\">Fountain
+        Valley Reg Hosp<\\/a> <br> 17100 Euclid Street <br> Fountain Valley CA 92708-4043
+        <br> <a href=\\\"/hospital/Fountain-Valley-Reg-Hosp-Fountain-Valley-CA\\\">Get
+        details & directions<\\/a>',crossIcon);\n          marker.setMap(map);\n        \n
+        \         point = new google.maps.LatLng(33.711196,-117.885256);\n          marker
+        = createMarker(point,'<a href=\\\"/hospital/Coastal-Communities-Hospital-Santa-Ana-CA\\\">Coastal
+        Communities Hospital<\\/a> <br> 2701 South Bristol Street <br> Santa Ana CA
+        92704-6201 <br> <a href=\\\"/hospital/Coastal-Communities-Hospital-Santa-Ana-CA\\\">Get
+        details & directions<\\/a>',crossIcon);\n          marker.setMap(map);\n        \n
+        \         point = new google.maps.LatLng(33.663342,-117.919337);\n          marker
+        = createMarker(point,'<a href=\\\"/hospital/FAIRVIEW-DEVELOPMENTAL-CENTER-COSTA-MESA-CA\\\">FAIRVIEW
+        DEVELOPMENTAL CENTER<\\/a> <br> 2501 HARBOR BOULEVARD <br> COSTA MESA CA 92626
+        <br> <a href=\\\"/hospital/FAIRVIEW-DEVELOPMENTAL-CENTER-COSTA-MESA-CA\\\">Get
+        details & directions<\\/a>',crossIcon);\n          marker.setMap(map);\n        \n
+        \         point = new google.maps.LatLng(33.652458,-117.91269);\n          marker
+        = createMarker(point,'<a href=\\\"/hospital/College-Hospital-Costa-Mesa-Costa-Mesa-CA\\\">College
+        Hospital Costa Mesa<\\/a> <br> 301 Victoria Street <br> Costa Mesa CA 92627-7131
+        <br> <a href=\\\"/hospital/College-Hospital-Costa-Mesa-Costa-Mesa-CA\\\">Get
+        details & directions<\\/a>',crossIcon);\n          marker.setMap(map);\n        \n\n
+        \       \n\t          point =new google.maps.LatLng(34.0736204, -118.4003563)\n\t
+        \         \n\t          marker = createMarker(point,'hospital<br>Found 127
+        hospital(s) within 30 miles',pinIcon);\n\t          marker.setMap(map);\n\t
+        \         var infowindow = new  google.maps.InfoWindow({content:'hospital<br>Found
+        127 hospital(s) within 30 miles'})\n\t          infowindow.open(map,marker);\n\t
+        \   \n    }\n\n\n\t\t  google.maps.event.addDomListener(window, 'load', initialize);\n\t</script>\n\n<div
+        class=\"container\">\n<div id=\"content\" class=\"column span-24\">\n<p style=\"color:
+        green\"></p>\n\n\n<h2><a href=\"/\">US Hospital Finder</a><span class=\"trade\">&trade;</span>:
+        Hospitals in hospital</h2>\n<div id=\"top-ad\">\n  <script type=\"text/javascript\"><!--\n
+        \ google_ad_client = \"ca-pub-3250171653939752\";\n  /* hospitals top 728x90
+        */\n  google_ad_slot = \"6801665236\";\n  google_ad_width = 728;\n  google_ad_height
+        = 90;\n  //-->\n  </script>\n  <script type=\"text/javascript\"\n          src=\"http://pagead2.googlesyndication.com/pagead/show_ads.js\">\n
+        \ </script>\n</div>\n<br>\n <form action=\"/hospitals/search\" method=\"get\"
+        onsubmit=\"return submitSearchForm($('search_query').value+' USA');\">\n  <b>Location:</b>
+        <input id=\"search_query\" name=\"search_query\" size=\"65\" type=\"text\"
+        value=\"\" />\n  <input id=\"lat\" name=\"lat\" type=\"hidden\" />\n  <input
+        id=\"lng\" name=\"lng\" type=\"hidden\" />\n  <input id=\"cgeo\" name=\"cgeo\"
+        type=\"hidden\" />\n  <input name=\"commit\" type=\"submit\" value=\"Search\"
+        />\n</form>\n\n<script type=\"text/javascript\">\n   function submitSearchForm(location){\n
+        \      getLocationFromGoogle(location);\n       return false;\n   }\n</script>\n\n<br>\nIf
+        you like this site, please try <a href=\"http://usnursinghomefinder.com\">US
+        Nursing Home Finder</a>, <a href=\"http://ushomecarefinder.com\">US Home Care
+        Finder</a>, <a href=\"http://findgoodschool.com\">Find Good School</a> and
+        <a href=\"http://usdialysisfinder.com\">US Dialysis Finder</a>\n\n<br>\n<br>\n<H3>Results
+        for:\"hospital\"</H3>\n<h4>Found 127 hospital(s) within 30 miles</h4>\n<br>\n<div
+        id=\"map\" style=\"width: 700px; height: 500px\"></div>\n<p>\n  <a href=\"/\">New
+        Hospital Search</a>\n</p>\n<br>\n<div id=\"list\">\n<table>\n <thead>\n  <tr>\n
+        \   <th>Name</th>\n    <th>Address</th>\n    <th>Phone</th>\n    \n    <th>Distance(Miles)</th>\n
+        \   \n  </tr>\n <thead>\n\n   <tr >\n\t   <td><a href=\"/hospital/Cedars-Sinai-Medical-Center-Los-Angeles-CA\">Cedars-Sinai
+        Medical Center</a> <a href=\"javascript:go_to_hospital(0)\" ><img src=\"/images/icon63.png\"
+        style=\"vertical-align:bottom;\"></a> </td>\n    <td>8700 Beverly Boulevard
+        \ <br>Los Angeles, CA 90048-1865 </td>\n    <td>310-423-5000</td>\n    \n
+        \   <td> 1.13</td>\n    \n  </tr>\n\n   <tr class='even'>\n\t   <td><a href=\"/hospital/CENTURY-CITY-DOCTORS-HOSPITAL-LOS-ANGELES-CA\">CENTURY
+        CITY DOCTORS HOSPITAL</a> <a href=\"javascript:go_to_hospital(1)\" ><img src=\"/images/icon63.png\"
+        style=\"vertical-align:bottom;\"></a> </td>\n    <td>2070 CENTURY PARK EAST
+        \   <br>LOS ANGELES                   , CA 90067 </td>\n    <td>310-772-4915</td>\n
+        \   \n    <td> 1.22</td>\n    \n  </tr>\n\n   <tr >\n\t   <td><a href=\"/hospital/MIRACLE-MILE-MEDICAL-CENTER-LOS-ANGELES-CA\">MIRACLE
+        MILE MEDICAL CENTER</a> <a href=\"javascript:go_to_hospital(2)\" ><img src=\"/images/icon63.png\"
+        style=\"vertical-align:bottom;\"></a> </td>\n    <td>6000 SAN VICENTE BLVD
+        \   <br>LOS ANGELES                   , CA 90036 </td>\n    <td>323-930-1040</td>\n
+        \   \n    <td> 2.41</td>\n    \n  </tr>\n\n   <tr class='even'>\n\t   <td><a
+        href=\"/hospital/UCLA-Medical-Center-Los-Angeles-CA\">UCLA Medical Center</a>
+        <a href=\"javascript:go_to_hospital(3)\" ><img src=\"/images/icon63.png\"
+        style=\"vertical-align:bottom;\"></a> </td>\n    <td>10833 Le Conte Avenue
+        \ <br>Los Angeles, CA 90095-3075 </td>\n    <td>310-825-9111</td>\n    \n
+        \   <td> 2.53</td>\n    \n  </tr>\n\n   <tr >\n\t   <td><a href=\"/hospital/Olympia-Medical-Center-Los-Angeles-CA\">Olympia
+        Medical Center</a> <a href=\"javascript:go_to_hospital(4)\" ><img src=\"/images/icon63.png\"
+        style=\"vertical-align:bottom;\"></a> </td>\n    <td>5900 West Olympic Boulevard
+        \ <br>Los Angeles, CA 90036 </td>\n    <td>310-657-5900</td>\n    \n    <td>
+        2.57</td>\n    \n  </tr>\n\n   <tr class='even'>\n\t   <td><a href=\"/hospital/UCLA-Neuropsychiatric-Hosp-Los-Angeles-CA\">UCLA
+        Neuropsychiatric Hosp</a> <a href=\"javascript:go_to_hospital(5)\" ><img src=\"/images/icon63.png\"
+        style=\"vertical-align:bottom;\"></a> </td>\n    <td>760 Westwood Plaza  <br>Los
+        Angeles, CA 90095-8353 </td>\n    <td>310-825-0511</td>\n    \n    <td> 2.61</td>\n
+        \   \n  </tr>\n\n   <tr >\n\t   <td><a href=\"/hospital/Kaiser-Foundation-Hospital-Los-Angeles-CA\">Kaiser
+        Foundation Hospital</a> <a href=\"javascript:go_to_hospital(6)\" ><img src=\"/images/icon63.png\"
+        style=\"vertical-align:bottom;\"></a> </td>\n    <td>6041 Cadillac Avenue
+        \ <br>Los Angeles, CA 90034-1702 </td>\n    <td>323-857-2201</td>\n    \n
+        \   <td> 2.86</td>\n    \n  </tr>\n\n   <tr class='even'>\n\t   <td><a href=\"/hospital/Brotman-Medical-Center-Culver-City-CA\">Brotman
+        Medical Center</a> <a href=\"javascript:go_to_hospital(7)\" ><img src=\"/images/icon63.png\"
+        style=\"vertical-align:bottom;\"></a> </td>\n    <td>3828 Delmas Terrace  <br>Culver
+        City, CA 90232-6806 </td>\n    <td>310-836-7000</td>\n    \n    <td> 3.48</td>\n
+        \   \n  </tr>\n\n   <tr >\n\t   <td><a href=\"/hospital/VA-Greater-LA-Hlthcare-System-Los-Angeles-CA\">VA
+        Greater LA Hlthcare System</a> <a href=\"javascript:go_to_hospital(8)\" ><img
+        src=\"/images/icon63.png\" style=\"vertical-align:bottom;\"></a> </td>\n    <td>11301
+        Wilshire Boulevard  <br>Los Angeles, CA 90073-1003 </td>\n    <td>310-478-3711</td>\n
+        \   \n    <td> 3.64</td>\n    \n  </tr>\n\n   <tr class='even'>\n\t   <td><a
+        href=\"/hospital/Hollywood-Community-Hospital-Los-Angeles-CA\">Hollywood Community
+        Hospital</a> <a href=\"javascript:go_to_hospital(9)\" ><img src=\"/images/icon63.png\"
+        style=\"vertical-align:bottom;\"></a> </td>\n    <td>6245 De Longpre Avenue
+        \ <br>Los Angeles, CA 90028-9001 </td>\n    <td>323-462-2271</td>\n    \n
+        \   <td> 4.59</td>\n    \n  </tr>\n\n   <tr >\n\t   <td><a href=\"/hospital/Saint-Johns-Health-Center-Santa-Monica-CA\">Saint
+        John's Health Center</a> <a href=\"javascript:go_to_hospital(10)\" ><img src=\"/images/icon63.png\"
+        style=\"vertical-align:bottom;\"></a> </td>\n    <td>1328 Twenty Second Street
+        \ <br>Santa Monica, CA 90404-2091 </td>\n    <td>310-829-5511</td>\n    \n
+        \   <td> 5.42</td>\n    \n  </tr>\n\n   <tr class='even'>\n\t   <td><a href=\"/hospital/Los-Angeles-Metro-Med-Center-Los-Angeles-CA\">Los
+        Angeles Metro Med Center</a> <a href=\"javascript:go_to_hospital(11)\" ><img
+        src=\"/images/icon63.png\" style=\"vertical-align:bottom;\"></a> </td>\n    <td>2231
+        South Western Avenue  <br>Los Angeles, CA 90018-1302 </td>\n    <td>323-730-7300</td>\n
+        \   \n    <td> 5.83</td>\n    \n  </tr>\n\n   <tr >\n\t   <td><a href=\"/hospital/Santa-Monica-UCLA-Med-Center-Santa-Monica-CA\">Santa
+        Monica UCLA Med Center</a> <a href=\"javascript:go_to_hospital(12)\" ><img
+        src=\"/images/icon63.png\" style=\"vertical-align:bottom;\"></a> </td>\n    <td>1250
+        16th Street  <br>Santa Monica, CA 90404 </td>\n    <td>310-319-4000</td>\n
+        \   \n    <td> 5.87</td>\n    \n  </tr>\n\n   <tr class='even'>\n\t   <td><a
+        href=\"/hospital/Kindred-Hospital-Los-Angeles-Los-Angeles-CA\">Kindred Hospital-Los
+        Angeles</a> <a href=\"javascript:go_to_hospital(13)\" ><img src=\"/images/icon63.png\"
+        style=\"vertical-align:bottom;\"></a> </td>\n    <td>5525 West Slauson Avenue
+        \ <br>Los Angeles, CA 90056-1067 </td>\n    <td>310-642-0325</td>\n    \n
+        \   <td> 5.98</td>\n    \n  </tr>\n\n   <tr >\n\t   <td><a href=\"/hospital/Kaiser-Foundation-Hospital-Sunset-Blvd-Los-Angeles-CA\">Kaiser
+        Foundation Hospital - Sunset Blvd</a> <a href=\"javascript:go_to_hospital(14)\"
+        ><img src=\"/images/icon63.png\" style=\"vertical-align:bottom;\"></a> </td>\n
+        \   <td>4867 Sunset Boulevard  <br>Los Angeles, CA 90027-5969 </td>\n    <td>323-783-4011</td>\n
+        \   \n    <td> 6.25</td>\n    \n  </tr>\n\n   <tr class='even'>\n\t   <td><a
+        href=\"/hospital/Hollywood-Presby-Medical-Ctr-Los-Angeles-CA\">Hollywood Presby
+        Medical Ctr</a> <a href=\"javascript:go_to_hospital(15)\" ><img src=\"/images/icon63.png\"
+        style=\"vertical-align:bottom;\"></a> </td>\n    <td>1300 North Vermont Avenue
+        \ <br>Los Angeles, CA 90027-0069 </td>\n    <td>323-913-4800</td>\n    \n
+        \   <td> 6.41</td>\n    \n  </tr>\n\n   <tr >\n\t   <td><a href=\"/hospital/Childrens-Hospital-Los-Angeles-Los-Angeles-CA\">Childrens
+        Hospital Los Angeles</a> <a href=\"javascript:go_to_hospital(16)\" ><img src=\"/images/icon63.png\"
+        style=\"vertical-align:bottom;\"></a> </td>\n    <td>4650 Sunset Boulevard
+        \ <br>Los Angeles, CA 90027-6062 </td>\n    <td>323-660-2450</td>\n    \n
+        \   <td> 6.50</td>\n    \n  </tr>\n\n   <tr class='even'>\n\t   <td><a href=\"/hospital/Shriners-Hospitals-for-Children-Los-Angeles\">Shriners
+        Hospitals for Children</a> <a href=\"javascript:go_to_hospital(17)\" ><img
+        src=\"/images/icon63.png\" style=\"vertical-align:bottom;\"></a> </td>\n    <td>3160
+        Geneva Street    <br>Los Angeles, CA 90020-1199 </td>\n    <td>213-388-3151</td>\n
+        \   \n    <td> 6.55</td>\n    \n  </tr>\n\n   <tr >\n\t   <td><a href=\"/hospital/Shriners-Hosps-for-Children-Los-Angeles-CA\">Shriners
+        Hosps for Children</a> <a href=\"javascript:go_to_hospital(18)\" ><img src=\"/images/icon63.png\"
+        style=\"vertical-align:bottom;\"></a> </td>\n    <td>3160 Geneva Street  <br>Los
+        Angeles, CA 90020-1199 </td>\n    <td>213-388-3151</td>\n    \n    <td> 6.56</td>\n
+        \   \n  </tr>\n\n   <tr class='even'>\n\t   <td><a href=\"/hospital/Sherman-Oaks-Hospital-Sherman-Oaks-CA\">Sherman
+        Oaks Hospital</a> <a href=\"javascript:go_to_hospital(19)\" ><img src=\"/images/icon63.png\"
+        style=\"vertical-align:bottom;\"></a> </td>\n    <td>4929 Van Nuys Boulevard
+        \ <br>Sherman Oaks, CA 91403-1702 </td>\n    <td>818-981-7111</td>\n    \n
+        \   <td> 6.58</td>\n    \n  </tr>\n\n   <tr >\n\t   <td><a href=\"/hospital/Temple-Community-Hospital-Los-Angeles-CA\">Temple
+        Community Hospital</a> <a href=\"javascript:go_to_hospital(20)\" ><img src=\"/images/icon63.png\"
+        style=\"vertical-align:bottom;\"></a> </td>\n    <td>235 North Hoover Street
+        \ <br>Los Angeles, CA 90004-3672 </td>\n    <td>213-382-7252</td>\n    \n
+        \   <td> 6.68</td>\n    \n  </tr>\n\n   <tr class='even'>\n\t   <td><a href=\"/hospital/Centinela-Freeman-Med-Center-Marina-Del-Rey-CA\">Centinela
+        Freeman Med Center</a> <a href=\"javascript:go_to_hospital(21)\" ><img src=\"/images/icon63.png\"
+        style=\"vertical-align:bottom;\"></a> </td>\n    <td>4650 Lincoln Boulevard
+        \ <br>Marina Del Rey, CA 90292-6360 </td>\n    <td>310-823-8911</td>\n    \n
+        \   <td> 6.75</td>\n    \n  </tr>\n\n   <tr >\n\t   <td><a href=\"/hospital/Providence-Saint-Joseph-Ctr-Burbank-CA\">Providence
+        Saint Joseph Ctr</a> <a href=\"javascript:go_to_hospital(22)\" ><img src=\"/images/icon63.png\"
+        style=\"vertical-align:bottom;\"></a> </td>\n    <td>501 South Buena Vista
+        Street  <br>Burbank, CA 91505-4866 </td>\n    <td>818-843-5111</td>\n    \n
+        \   <td> 7.06</td>\n    \n  </tr>\n\n   <tr class='even'>\n\t   <td><a href=\"/hospital/St-Vincent-Medical-Center-Los-Angeles-CA\">St
+        Vincent Medical Center</a> <a href=\"javascript:go_to_hospital(23)\" ><img
+        src=\"/images/icon63.png\" style=\"vertical-align:bottom;\"></a> </td>\n    <td>2131
+        West Third Street  <br>Los Angeles, CA 90057-7992 </td>\n    <td>213-484-7111</td>\n
+        \   \n    <td> 7.33</td>\n    \n  </tr>\n\n   <tr >\n\t   <td><a href=\"/hospital/Encino-Tarzana-Reg-Med-Ctr-Encino-CA\">Encino-Tarzana
+        Reg Med Ctr</a> <a href=\"javascript:go_to_hospital(24)\" ><img src=\"/images/icon63.png\"
+        style=\"vertical-align:bottom;\"></a> </td>\n    <td>16237 Ventura Boulevard
+        \ <br>Encino, CA 91436-2201 </td>\n    <td>818-995-5000</td>\n    \n    <td>
+        7.59</td>\n    \n  </tr>\n\n   <tr class='even'>\n\t   <td><a href=\"/hospital/City-of-Angels-Medical-Center-Los-Angeles-CA\">City
+        of Angels Medical Center</a> <a href=\"javascript:go_to_hospital(25)\" ><img
+        src=\"/images/icon63.png\" style=\"vertical-align:bottom;\"></a> </td>\n    <td>1711
+        West Temple Street  <br>Los Angeles, CA 90026 </td>\n    <td>213-989-6100</td>\n
+        \   \n    <td> 7.86</td>\n    \n  </tr>\n\n   <tr >\n\t   <td><a href=\"/hospital/Good-Samaritan-Hospital-Los-Angeles-CA\">Good
+        Samaritan Hospital</a> <a href=\"javascript:go_to_hospital(26)\" ><img src=\"/images/icon63.png\"
+        style=\"vertical-align:bottom;\"></a> </td>\n    <td>1225 Wilshire Boulevard
+        \ <br>Los Angeles, CA 90017-1901 </td>\n    <td>213-977-2121</td>\n    \n
+        \   <td> 7.86</td>\n    \n  </tr>\n\n   <tr class='even'>\n\t   <td><a href=\"/hospital/Centinela-Freeman-Med-Center-Inglewood-CA\">Centinela
+        Freeman Med Center</a> <a href=\"javascript:go_to_hospital(27)\" ><img src=\"/images/icon63.png\"
+        style=\"vertical-align:bottom;\"></a> </td>\n    <td>333 North Prairie Avenue
+        \ <br>Inglewood, CA 90301-4514 </td>\n    <td>310-674-7050</td>\n    \n    <td>
+        8.08</td>\n    \n  </tr>\n\n   <tr >\n\t   <td><a href=\"/hospital/California-Hospital-Med-Center-Los-Angeles-CA\">California
+        Hospital Med Center</a> <a href=\"javascript:go_to_hospital(28)\" ><img src=\"/images/icon63.png\"
+        style=\"vertical-align:bottom;\"></a> </td>\n    <td>1401 South Grand Avenue
+        \ <br>Los Angeles, CA 90015-3010 </td>\n    <td>213-748-2411</td>\n    \n
+        \   <td> 8.13</td>\n    \n  </tr>\n\n   <tr class='even'>\n\t   <td><a href=\"/hospital/Gateways-Hosp-Mntl-Hlth-Ctr-Los-Angeles-CA\">Gateways
+        Hosp & Mntl Hlth Ctr</a> <a href=\"javascript:go_to_hospital(29)\" ><img src=\"/images/icon63.png\"
+        style=\"vertical-align:bottom;\"></a> </td>\n    <td>1891 Effie Street  <br>Los
+        Angeles, CA 90026-1711 </td>\n    <td>323-644-2000</td>\n    \n    <td> 8.29</td>\n
+        \   \n  </tr>\n\n   <tr >\n\t   <td><a href=\"/hospital/Barlow-Respiratory-Hospital-Los-Angeles-CA\">Barlow
+        Respiratory Hospital</a> <a href=\"javascript:go_to_hospital(30)\" ><img src=\"/images/icon63.png\"
+        style=\"vertical-align:bottom;\"></a> </td>\n    <td>2000 Stadium Way  <br>Los
+        Angeles, CA 90026-2696 </td>\n    <td>213-250-4200</td>\n    \n    <td> 8.76</td>\n
+        \   \n  </tr>\n\n   <tr class='even'>\n\t   <td><a href=\"/hospital/Glendale-Mem-Hosp-Hlth-Ctr-Glendale-CA\">Glendale
+        Mem Hosp & Hlth Ctr</a> <a href=\"javascript:go_to_hospital(31)\" ><img src=\"/images/icon63.png\"
+        style=\"vertical-align:bottom;\"></a> </td>\n    <td>1420 South Central Avenue
+        \ <br>Glendale, CA 91204-2594 </td>\n    <td>818-502-1900</td>\n    \n    <td>
+        9.01</td>\n    \n  </tr>\n\n   <tr >\n\t   <td><a href=\"/hospital/Valley-Presbyterian-Hospital-Van-Nuys-CA\">Valley
+        Presbyterian Hospital</a> <a href=\"javascript:go_to_hospital(32)\" ><img
+        src=\"/images/icon63.png\" style=\"vertical-align:bottom;\"></a> </td>\n    <td>15107
+        Vanowen Street  <br>Van Nuys, CA 91405-4598 </td>\n    <td>818-782-6600</td>\n
+        \   \n    <td> 9.05</td>\n    \n  </tr>\n\n   <tr class='even'>\n\t   <td><a
+        href=\"/hospital/Centinela-Freeman-Med-Center-Hardy-Inglewood-CA\">Centinela
+        Freeman Med Center - Hardy</a> <a href=\"javascript:go_to_hospital(33)\" ><img
+        src=\"/images/icon63.png\" style=\"vertical-align:bottom;\"></a> </td>\n    <td>555
+        East Hardy Street  <br>Inglewood, CA 90301-4011 </td>\n    <td>310-673-4660</td>\n
+        \   \n    <td> 9.11</td>\n    \n  </tr>\n\n   <tr >\n\t   <td><a href=\"/hospital/Pacific-Alliance-Med-Center-Los-Angeles-CA\">Pacific
+        Alliance Med Center</a> <a href=\"javascript:go_to_hospital(34)\" ><img src=\"/images/icon63.png\"
+        style=\"vertical-align:bottom;\"></a> </td>\n    <td>531 West College Street
+        \ <br>Los Angeles, CA 90012-2315 </td>\n    <td>213-624-8411</td>\n    \n
+        \   <td> 9.26</td>\n    \n  </tr>\n\n   <tr class='even'>\n\t   <td><a href=\"/hospital/La-County-Central-Jail-Hosp-Los-Angeles-CA\">La
+        County Central Jail Hosp</a> <a href=\"javascript:go_to_hospital(35)\" ><img
+        src=\"/images/icon63.png\" style=\"vertical-align:bottom;\"></a> </td>\n    <td>441
+        Bauchet Street  <br>Los Angeles, CA 90012-2994 </td>\n    <td>213-473-6100</td>\n
+        \   \n    <td> 9.72</td>\n    \n  </tr>\n\n   <tr >\n\t   <td><a href=\"/hospital/Encino-Tarzana-Reg-Med-Center-Tarzana-CA\">Encino-Tarzana
+        Reg Med Center</a> <a href=\"javascript:go_to_hospital(36)\" ><img src=\"/images/icon63.png\"
+        style=\"vertical-align:bottom;\"></a> </td>\n    <td>18321 Clark Street  <br>Tarzana,
+        CA 91356-3521 </td>\n    <td>818-881-0800</td>\n    \n    <td>10.03</td>\n
+        \   \n  </tr>\n\n   <tr class='even'>\n\t   <td><a href=\"/hospital/Kaiser-Foundation-Hospital-Panorama-City-CA\">Kaiser
+        Foundation Hospital</a> <a href=\"javascript:go_to_hospital(37)\" ><img src=\"/images/icon63.png\"
+        style=\"vertical-align:bottom;\"></a> </td>\n    <td>13652 Cantara Street
+        \ <br>Panorama City, CA 91402-5497 </td>\n    <td>818-375-2000</td>\n    \n
+        \   <td>10.25</td>\n    \n  </tr>\n\n   <tr >\n\t   <td><a href=\"/hospital/White-Memorial-Medical-Center-Los-Angeles-CA\">White
+        Memorial Medical Center</a> <a href=\"javascript:go_to_hospital(38)\" ><img
+        src=\"/images/icon63.png\" style=\"vertical-align:bottom;\"></a> </td>\n    <td>1720
+        Cesar E Chavez Avenue  <br>Los Angeles, CA 90033-2481 </td>\n    <td>323-268-5000</td>\n
+        \   \n    <td>10.60</td>\n    \n  </tr>\n\n   <tr class='even'>\n\t   <td><a
+        href=\"/hospital/Mission-Community-Hospital-Panorama-City-CA\">Mission Community
+        Hospital</a> <a href=\"javascript:go_to_hospital(39)\" ><img src=\"/images/icon63.png\"
+        style=\"vertical-align:bottom;\"></a> </td>\n    <td>14850 Roscoe Boulevard
+        \ <br>Panorama City, CA 91402 </td>\n    <td>818-787-2222</td>\n    \n    <td>10.71</td>\n
+        \   \n  </tr>\n\n   <tr >\n\t   <td><a href=\"/hospital/Tarzana-Treatment-Center-Tarzana-CA\">Tarzana
+        Treatment Center</a> <a href=\"javascript:go_to_hospital(40)\" ><img src=\"/images/icon63.png\"
+        style=\"vertical-align:bottom;\"></a> </td>\n    <td>18646 Oxnard Street  <br>Tarzana,
+        CA 91356 </td>\n    <td>818-996-1051</td>\n    \n    <td>10.84</td>\n    \n
+        \ </tr>\n\n   <tr class='even'>\n\t   <td><a href=\"/hospital/LAC-USC-Medical-Center-Los-Angeles-CA\">LAC/USC
+        Medical Center</a> <a href=\"javascript:go_to_hospital(41)\" ><img src=\"/images/icon63.png\"
+        style=\"vertical-align:bottom;\"></a> </td>\n    <td>1200 North State Street
+        \ <br>Los Angeles, CA 90033-1029 </td>\n    <td>323-226-2622</td>\n    \n
+        \   <td>10.96</td>\n    \n  </tr>\n\n   <tr >\n\t   <td><a href=\"/hospital/Promise-Hospital-of-East-LA-Los-Angeles-CA\">Promise
+        Hospital of East LA</a> <a href=\"javascript:go_to_hospital(42)\" ><img src=\"/images/icon63.png\"
+        style=\"vertical-align:bottom;\"></a> </td>\n    <td>443 South Soto Street
+        \ <br>Los Angeles, CA 90033-4398 </td>\n    <td>323-261-1181</td>\n    \n
+        \   <td>11.02</td>\n    \n  </tr>\n\n   <tr class='even'>\n\t   <td><a href=\"/hospital/Glendale-Adventist-Medical-Ctr-Glendale-CA\">Glendale
+        Adventist Medical Ctr</a> <a href=\"javascript:go_to_hospital(43)\" ><img
+        src=\"/images/icon63.png\" style=\"vertical-align:bottom;\"></a> </td>\n    <td>1509
+        Wilson Terrace  <br>Glendale, CA 91206-4098 </td>\n    <td>818-409-8000</td>\n
+        \   \n    <td>11.05</td>\n    \n  </tr>\n\n   <tr >\n\t   <td><a href=\"/hospital/USC-Norris-Cancer-Ctr-Hosp-Los-Angeles-CA\">USC-Norris
+        Cancer Ctr & Hosp</a> <a href=\"javascript:go_to_hospital(44)\" ><img src=\"/images/icon63.png\"
+        style=\"vertical-align:bottom;\"></a> </td>\n    <td>1441 Eastlake Avenue
+        \ <br>Los Angeles, CA 90033-3804 </td>\n    <td>323-865-3000</td>\n    \n
+        \   <td>11.23</td>\n    \n  </tr>\n\n   <tr class='even'>\n\t   <td><a href=\"/hospital/USC-University-Hospital-Los-Angeles-CA\">USC
+        University Hospital</a> <a href=\"javascript:go_to_hospital(45)\" ><img src=\"/images/icon63.png\"
+        style=\"vertical-align:bottom;\"></a> </td>\n    <td>1500 San Pablo Street
+        \ <br>Los Angeles, CA 90033-4587 </td>\n    <td>323-442-8500</td>\n    \n
+        \   <td>11.34</td>\n    \n  </tr>\n\n   <tr >\n\t   <td><a href=\"/hospital/Pacifica-Hosp-of-the-Valley-Sun-Valley-CA\">Pacifica
+        Hosp of the Valley</a> <a href=\"javascript:go_to_hospital(46)\" ><img src=\"/images/icon63.png\"
+        style=\"vertical-align:bottom;\"></a> </td>\n    <td>9449 San Fernando Road
+        \ <br>Sun Valley, CA 91352-1421 </td>\n    <td>818-767-3310</td>\n    \n    <td>11.58</td>\n
+        \   \n  </tr>\n\n   <tr class='even'>\n\t   <td><a href=\"/hospital/Comm-Hosp-of-Huntington-Park-Huntington-Park-CA\">Comm
+        Hosp of Huntington Park</a> <a href=\"javascript:go_to_hospital(47)\" ><img
+        src=\"/images/icon63.png\" style=\"vertical-align:bottom;\"></a> </td>\n    <td>2623
+        East Slauson Avenue  <br>Huntington Park, CA 90255-2900 </td>\n    <td>323-583-1931</td>\n
+        \   \n    <td>11.65</td>\n    \n  </tr>\n\n   <tr >\n\t   <td><a href=\"/hospital/Northridge-Hosp-Medical-Center-Northridge-CA\">Northridge
+        Hosp Medical Center</a> <a href=\"javascript:go_to_hospital(48)\" ><img src=\"/images/icon63.png\"
+        style=\"vertical-align:bottom;\"></a> </td>\n    <td>18300 Roscoe Boulevard
+        \ <br>Northridge, CA 91328-4167 </td>\n    <td>818-885-8500</td>\n    \n    <td>12.66</td>\n
+        \   \n  </tr>\n\n   <tr class='even'>\n\t   <td><a href=\"/hospital/Kaiser-Foundation-Hospital-Woodland-Hills-CA\">Kaiser
+        Foundation Hospital</a> <a href=\"javascript:go_to_hospital(49)\" ><img src=\"/images/icon63.png\"
+        style=\"vertical-align:bottom;\"></a> </td>\n    <td>5601 Desoto Avenue  <br>Woodland
+        Hills, CA 91365-6701 </td>\n    <td>818-719-3800</td>\n    \n    <td>12.73</td>\n
+        \   \n  </tr>\n\n   <tr >\n\t   <td><a href=\"/hospital/Los-Angeles-Community-Hospital-Los-Angeles-CA\">Los
+        Angeles Community Hospital</a> <a href=\"javascript:go_to_hospital(50)\" ><img
+        src=\"/images/icon63.png\" style=\"vertical-align:bottom;\"></a> </td>\n    <td>4081
+        East Olympic Boulevard  <br>Los Angeles, CA 90023-3330 </td>\n    <td>323-267-0477</td>\n
+        \   \n    <td>12.81</td>\n    \n  </tr>\n\n   <tr class='even'>\n\t   <td><a
+        href=\"/hospital/East-Los-Angeles-Doctors-Hosp-Los-Angeles-CA\">East Los Angeles
+        Doctors Hosp</a> <a href=\"javascript:go_to_hospital(51)\" ><img src=\"/images/icon63.png\"
+        style=\"vertical-align:bottom;\"></a> </td>\n    <td>4060 East Whittier Boulevard
+        \ <br>Los Angeles, CA 90023-2526 </td>\n    <td>323-268-5514</td>\n    \n
+        \   <td>12.86</td>\n    \n  </tr>\n\n   <tr >\n\t   <td><a href=\"/hospital/Memorial-Hospital-of-Gardena-Gardena-CA\">Memorial
+        Hospital of Gardena</a> <a href=\"javascript:go_to_hospital(52)\" ><img src=\"/images/icon63.png\"
+        style=\"vertical-align:bottom;\"></a> </td>\n    <td>1145 West Redondo Beach
+        Blvd  <br>Gardena, CA 90247-3528 </td>\n    <td>310-532-4200</td>\n    \n
+        \   <td>13.91</td>\n    \n  </tr>\n\n   <tr class='even'>\n\t   <td><a href=\"/hospital/LAC-Martin-Luther-King-Hosp-Los-Angeles-CA\">LAC-Martin
+        Luther King Hosp</a> <a href=\"javascript:go_to_hospital(53)\" ><img src=\"/images/icon63.png\"
+        style=\"vertical-align:bottom;\"></a> </td>\n    <td>12021 South Wilmington
+        Avenue  <br>Los Angeles, CA 90059-3019 </td>\n    <td>310-668-4321</td>\n
+        \   \n    <td>13.92</td>\n    \n  </tr>\n\n   <tr >\n\t   <td><a href=\"/hospital/Verdugo-Hills-Hospital-Glendale-CA\">Verdugo
+        Hills Hospital</a> <a href=\"javascript:go_to_hospital(54)\" ><img src=\"/images/icon63.png\"
+        style=\"vertical-align:bottom;\"></a> </td>\n    <td>1812 Verdugo Boulevard
+        \ <br>Glendale, CA 91208-1409 </td>\n    <td>818-790-7100</td>\n    \n    <td>13.98</td>\n
+        \   \n  </tr>\n\n   <tr class='even'>\n\t   <td><a href=\"/hospital/Community-Hospital-of-Gardena-Gardena-CA\">Community
+        Hospital of Gardena</a> <a href=\"javascript:go_to_hospital(55)\" ><img src=\"/images/icon63.png\"
+        style=\"vertical-align:bottom;\"></a> </td>\n    <td>1246 West 155th Street
+        \ <br>Gardena, CA 90247-4011 </td>\n    <td>310-323-5330</td>\n    \n    <td>13.99</td>\n
+        \   \n  </tr>\n\n   <tr >\n\t   <td><a href=\"/hospital/Providence-Holy-Cross-Med-Ctr-San-Fernando-CA\">Providence
+        Holy Cross Med Ctr</a> <a href=\"javascript:go_to_hospital(56)\" ><img src=\"/images/icon63.png\"
+        style=\"vertical-align:bottom;\"></a> </td>\n    <td>15031 Rinaldi Street
+        \ <br>San Fernando, CA 91346-9600 </td>\n    <td>818-365-8051</td>\n    \n
+        \   <td>14.57</td>\n    \n  </tr>\n\n   <tr class='even'>\n\t   <td><a href=\"/hospital/Alhambra-Hospital-Medical-Ctr-Alhambra-CA\">Alhambra
+        Hospital Medical Ctr</a> <a href=\"javascript:go_to_hospital(57)\" ><img src=\"/images/icon63.png\"
+        style=\"vertical-align:bottom;\"></a> </td>\n    <td>100 South Raymond Avenue
+        \ <br>Alhambra, CA 91801-3199 </td>\n    <td>626-570-1606</td>\n    \n    <td>14.68</td>\n
+        \   \n  </tr>\n\n   <tr >\n\t   <td><a href=\"/hospital/Motion-Picture-Tel-Hospital-Woodland-Hills-CA\">Motion
+        Picture & Tel Hospital</a> <a href=\"javascript:go_to_hospital(58)\" ><img
+        src=\"/images/icon63.png\" style=\"vertical-align:bottom;\"></a> </td>\n    <td>23388
+        Mulholland Drive  <br>Woodland Hills, CA 91364-2733 </td>\n    <td>818-876-1888</td>\n
+        \   \n    <td>14.71</td>\n    \n  </tr>\n\n   <tr class='even'>\n\t   <td><a
+        href=\"/hospital/Huntington-Memorial-Hospital-Pasadena-CA\">Huntington Memorial
+        Hospital</a> <a href=\"javascript:go_to_hospital(59)\" ><img src=\"/images/icon63.png\"
+        style=\"vertical-align:bottom;\"></a> </td>\n    <td>100 West California Boulevard
+        \ <br>Pasadena, CA 91105-3097 </td>\n    <td>626-397-5000</td>\n    \n    <td>14.84</td>\n
+        \   \n  </tr>\n\n   <tr >\n\t   <td><a href=\"/hospital/St-Francis-Medical-Center-Lynwood-CA\">St
+        Francis Medical Center</a> <a href=\"javascript:go_to_hospital(60)\" ><img
+        src=\"/images/icon63.png\" style=\"vertical-align:bottom;\"></a> </td>\n    <td>3630
+        East Imperial Highway  <br>Lynwood, CA 90262-2636 </td>\n    <td>310-900-8900</td>\n
+        \   \n    <td>14.98</td>\n    \n  </tr>\n\n   <tr class='even'>\n\t   <td><a
+        href=\"/hospital/Monterey-Park-Hospital-Monterey-Park-CA\">Monterey Park Hospital</a>
+        <a href=\"javascript:go_to_hospital(61)\" ><img src=\"/images/icon63.png\"
+        style=\"vertical-align:bottom;\"></a> </td>\n    <td>900 South Atlantic Boulevard
+        \ <br>Monterey Park, CA 91754-4780 </td>\n    <td>626-570-9000</td>\n    \n
+        \   <td>15.12</td>\n    \n  </tr>\n\n   <tr >\n\t   <td><a href=\"/hospital/West-Hills-Hosp-Med-Center-Canoga-Park-CA\">West
+        Hills Hosp & Med Center</a> <a href=\"javascript:go_to_hospital(62)\" ><img
+        src=\"/images/icon63.png\" style=\"vertical-align:bottom;\"></a> </td>\n    <td>7300
+        Medical Center Drive  <br>Canoga Park, CA 91307-1902 </td>\n    <td>818-676-4000</td>\n
+        \   \n    <td>15.88</td>\n    \n  </tr>\n\n   <tr class='even'>\n\t   <td><a
+        href=\"/hospital/Garfield-Medical-Center-Monterey-Park-CA\">Garfield Medical
+        Center</a> <a href=\"javascript:go_to_hospital(63)\" ><img src=\"/images/icon63.png\"
+        style=\"vertical-align:bottom;\"></a> </td>\n    <td>525 North Garfield Avenue
+        \ <br>Monterey Park, CA 91754-1205 </td>\n    <td>626-573-2222</td>\n    \n
+        \   <td>15.89</td>\n    \n  </tr>\n\n   <tr >\n\t   <td><a href=\"/hospital/Impact-Drug-Treatment-Center-Pasadena-CA\">Impact
+        Drug Treatment Center</a> <a href=\"javascript:go_to_hospital(64)\" ><img
+        src=\"/images/icon63.png\" style=\"vertical-align:bottom;\"></a> </td>\n    <td>1680
+        North Fair Oaks Avenue  <br>Pasadena, CA 91103-1642 </td>\n    <td>323-681-2575</td>\n
+        \   \n    <td>15.93</td>\n    \n  </tr>\n\n   <tr class='even'>\n\t   <td><a
+        href=\"/hospital/Little-Company-of-Mary-Hosp-Torrance-CA\">Little Company
+        of Mary Hosp</a> <a href=\"javascript:go_to_hospital(65)\" ><img src=\"/images/icon63.png\"
+        style=\"vertical-align:bottom;\"></a> </td>\n    <td>4101 Torrance Boulevard
+        \ <br>Torrance, CA 90503-4698 </td>\n    <td>310-540-7676</td>\n    \n    <td>16.51</td>\n
+        \   \n  </tr>\n\n   <tr >\n\t   <td><a href=\"/hospital/San-Gabriel-Valley-Med-Ctr-San-Gabriel-CA\">San
+        Gabriel Valley Med Ctr</a> <a href=\"javascript:go_to_hospital(66)\" ><img
+        src=\"/images/icon63.png\" style=\"vertical-align:bottom;\"></a> </td>\n    <td>438
+        West Las Tunas Drive  <br>San Gabriel, CA 91776-1216 </td>\n    <td>626-289-5454</td>\n
+        \   \n    <td>17.02</td>\n    \n  </tr>\n\n   <tr class='even'>\n\t   <td><a
+        href=\"/hospital/Rancho-Los-Amigos-Center-Downey-CA\">Rancho Los Amigos Center</a>
+        <a href=\"javascript:go_to_hospital(67)\" ><img src=\"/images/icon63.png\"
+        style=\"vertical-align:bottom;\"></a> </td>\n    <td>7601 East Imperial Highway
+        \ <br>Downey, CA 90242-3496 </td>\n    <td>562-401-7022</td>\n    \n    <td>17.22</td>\n
+        \   \n  </tr>\n\n   <tr >\n\t   <td><a href=\"/hospital/LAC-Olive-View-UCLA-Med-Ctr-Sylmar-CA\">LAC-Olive
+        View-UCLA Med Ctr</a> <a href=\"javascript:go_to_hospital(68)\" ><img src=\"/images/icon63.png\"
+        style=\"vertical-align:bottom;\"></a> </td>\n    <td>14445 Olive View Drive
+        \ <br>Sylmar, CA 91342-1495 </td>\n    <td>818-364-1555</td>\n    \n    <td>17.55</td>\n
+        \   \n  </tr>\n\n   <tr class='even'>\n\t   <td><a href=\"/hospital/Beverly-Hospital-Montebello-CA\">Beverly
+        Hospital</a> <a href=\"javascript:go_to_hospital(69)\" ><img src=\"/images/icon63.png\"
+        style=\"vertical-align:bottom;\"></a> </td>\n    <td>309 West Beverly Boulevard
+        \ <br>Montebello, CA 90640-4308 </td>\n    <td>323-726-1222</td>\n    \n    <td>17.62</td>\n
+        \   \n  </tr>\n\n   <tr >\n\t   <td><a href=\"/hospital/LAC-Harbor-UCLA-Med-Center-Torrance-CA\">LAC-Harbor-UCLA
+        Med Center</a> <a href=\"javascript:go_to_hospital(70)\" ><img src=\"/images/icon63.png\"
+        style=\"vertical-align:bottom;\"></a> </td>\n    <td>1000 West Carson Street
+        \ <br>Torrance, CA 90502-2004 </td>\n    <td>310-222-2345</td>\n    \n    <td>17.85</td>\n
+        \   \n  </tr>\n\n   <tr class='even'>\n\t   <td><a href=\"/hospital/Downey-Regional-Medical-Center-Downey-CA\">Downey
+        Regional Medical Center</a> <a href=\"javascript:go_to_hospital(71)\" ><img
+        src=\"/images/icon63.png\" style=\"vertical-align:bottom;\"></a> </td>\n    <td>11500
+        Brookshire Avenue  <br>Downey, CA 90241-4917 </td>\n    <td>562-904-5000</td>\n
+        \   \n    <td>18.13</td>\n    \n  </tr>\n\n   <tr >\n\t   <td><a href=\"/hospital/Torrance-Memorial-Med-Center-Torrance-CA\">Torrance
+        Memorial Med Center</a> <a href=\"javascript:go_to_hospital(72)\" ><img src=\"/images/icon63.png\"
+        style=\"vertical-align:bottom;\"></a> </td>\n    <td>3330 Lomita Boulevard
+        \ <br>Torrance, CA 90505-5002 </td>\n    <td>310-325-9110</td>\n    \n    <td>18.34</td>\n
+        \   \n  </tr>\n\n   <tr class='even'>\n\t   <td><a href=\"/hospital/Aurora-Las-Encinas-Hospital-Pasadena-CA\">Aurora
+        Las Encinas Hospital</a> <a href=\"javascript:go_to_hospital(73)\" ><img src=\"/images/icon63.png\"
+        style=\"vertical-align:bottom;\"></a> </td>\n    <td>2900 East Del Mar Boulevard
+        \ <br>Pasadena, CA 91107-4399 </td>\n    <td>626-795-9901</td>\n    \n    <td>18.38</td>\n
+        \   \n  </tr>\n\n   <tr >\n\t   <td><a href=\"/hospital/Del-Amo-Hospital-Torrance-CA\">Del
+        Amo Hospital</a> <a href=\"javascript:go_to_hospital(74)\" ><img src=\"/images/icon63.png\"
+        style=\"vertical-align:bottom;\"></a> </td>\n    <td>23700 Camino Del Sol
+        \ <br>Torrance, CA 90505-5000 </td>\n    <td>310-530-1151</td>\n    \n    <td>18.60</td>\n
+        \   \n  </tr>\n\n   <tr class='even'>\n\t   <td><a href=\"/hospital/Alhambra-Hospital-Rosemead-CA\">Alhambra
+        Hospital</a> <a href=\"javascript:go_to_hospital(75)\" ><img src=\"/images/icon63.png\"
+        style=\"vertical-align:bottom;\"></a> </td>\n    <td>4619 North Rosemead Boulevard
+        \ <br>Rosemead, CA 91770-1478 </td>\n    <td>626-286-1191</td>\n    \n    <td>18.75</td>\n
+        \   \n  </tr>\n\n   <tr >\n\t   <td><a href=\"/hospital/Promise-Hospital-of-East-LA-Paramount-CA\">Promise
+        Hospital of East LA</a> <a href=\"javascript:go_to_hospital(76)\" ><img src=\"/images/icon63.png\"
+        style=\"vertical-align:bottom;\"></a> </td>\n    <td>16453 South Colorado
+        Avenue  <br>Paramount, CA 90723-5000 </td>\n    <td>562-531-3110</td>\n    \n
+        \   <td>18.92</td>\n    \n  </tr>\n\n   <tr class='even'>\n\t   <td><a href=\"/hospital/Kaiser-Foundation-Hospital-Bellflower-CA\">Kaiser
+        Foundation Hospital</a> <a href=\"javascript:go_to_hospital(77)\" ><img src=\"/images/icon63.png\"
+        style=\"vertical-align:bottom;\"></a> </td>\n    <td>9400 East Rosecrans Avenue
+        \ <br>Bellflower, CA 90706-2246 </td>\n    <td>562-461-3000</td>\n    \n    <td>19.27</td>\n
+        \   \n  </tr>\n\n   <tr >\n\t   <td><a href=\"/hospital/Greater-El-Monte-Comm-Hospital-El-Monte-CA\">Greater
+        El Monte Comm Hospital</a> <a href=\"javascript:go_to_hospital(78)\" ><img
+        src=\"/images/icon63.png\" style=\"vertical-align:bottom;\"></a> </td>\n    <td>1701
+        Santa Anita Avenue  <br>El Monte, CA 91733-3411 </td>\n    <td>626-579-7777</td>\n
+        \   \n    <td>20.53</td>\n    \n  </tr>\n\n   <tr class='even'>\n\t   <td><a
+        href=\"/hospital/Coast-Plaza-Doctors-Hospital-Norwalk-CA\">Coast Plaza Doctors
+        Hospital</a> <a href=\"javascript:go_to_hospital(79)\" ><img src=\"/images/icon63.png\"
+        style=\"vertical-align:bottom;\"></a> </td>\n    <td>13100 Studebaker Road
+        \ <br>Norwalk, CA 90650-2531 </td>\n    <td>562-868-3751</td>\n    \n    <td>20.54</td>\n
+        \   \n  </tr>\n\n   <tr >\n\t   <td><a href=\"/hospital/Kaiser-Foundation-Hospital-Harbor-City-CA\">Kaiser
+        Foundation Hospital</a> <a href=\"javascript:go_to_hospital(80)\" ><img src=\"/images/icon63.png\"
+        style=\"vertical-align:bottom;\"></a> </td>\n    <td>25825 South Vermont Avenue
+        \ <br>Harbor City, CA 90710-3599 </td>\n    <td>310-325-5111</td>\n    \n
+        \   <td>20.59</td>\n    \n  </tr>\n\n   <tr class='even'>\n\t   <td><a href=\"/hospital/Lakewood-Regional-Medical-Ctr-Lakewood-CA\">Lakewood
+        Regional Medical Ctr</a> <a href=\"javascript:go_to_hospital(81)\" ><img src=\"/images/icon63.png\"
+        style=\"vertical-align:bottom;\"></a> </td>\n    <td>3700 East South Street
+        \ <br>Lakewood, CA 90712-1498 </td>\n    <td>562-531-2550</td>\n    \n    <td>20.64</td>\n
+        \   \n  </tr>\n\n   <tr >\n\t   <td><a href=\"/hospital/Bellflower-Medical-Center-Bellflower-CA\">Bellflower
+        Medical Center</a> <a href=\"javascript:go_to_hospital(82)\" ><img src=\"/images/icon63.png\"
+        style=\"vertical-align:bottom;\"></a> </td>\n    <td>9542 East Artesia Boulevard
+        \ <br>Bellflower, CA 90706-6511 </td>\n    <td>562-925-8355</td>\n    \n    <td>20.70</td>\n
+        \   \n  </tr>\n\n   <tr class='even'>\n\t   <td><a href=\"/hospital/Methodist-Hosp-of-Southern-CA-Arcadia-CA\">Methodist
+        Hosp of Southern CA</a> <a href=\"javascript:go_to_hospital(83)\" ><img src=\"/images/icon63.png\"
+        style=\"vertical-align:bottom;\"></a> </td>\n    <td>300 West Huntington Drive
+        \ <br>Arcadia, CA 91007-3473 </td>\n    <td>626-898-8000</td>\n    \n    <td>20.98</td>\n
+        \   \n  </tr>\n\n   <tr >\n\t   <td><a href=\"/hospital/College-Hospital-Cerritos-CA\">College
+        Hospital</a> <a href=\"javascript:go_to_hospital(84)\" ><img src=\"/images/icon63.png\"
+        style=\"vertical-align:bottom;\"></a> </td>\n    <td>10802 College Place  <br>Cerritos,
+        CA 90703-1579 </td>\n    <td>562-924-9581</td>\n    \n    <td>21.48</td>\n
+        \   \n  </tr>\n\n   <tr class='even'>\n\t   <td><a href=\"/hospital/Presbyterian-Intercomm-Hosp-Whittier-CA\">Presbyterian
+        Intercomm Hosp</a> <a href=\"javascript:go_to_hospital(85)\" ><img src=\"/images/icon63.png\"
+        style=\"vertical-align:bottom;\"></a> </td>\n    <td>12401 Washington Boulevard
+        \ <br>Whittier, CA 90602-1099 </td>\n    <td>562-698-0811</td>\n    \n    <td>21.50</td>\n
+        \   \n  </tr>\n\n   <tr >\n\t   <td><a href=\"/hospital/Metropolitan-State-Hospital-Norwalk-CA\">Metropolitan
+        State Hospital</a> <a href=\"javascript:go_to_hospital(86)\" ><img src=\"/images/icon63.png\"
+        style=\"vertical-align:bottom;\"></a> </td>\n    <td>11401 Bloomfield Avenue
+        \ <br>Norwalk, CA 90650 </td>\n    <td>562-863-7011</td>\n    \n    <td>21.88</td>\n
+        \   \n  </tr>\n\n   <tr class='even'>\n\t   <td><a href=\"/hospital/Pacific-Hospital-of-Long-Beach-Long-Beach-CA\">Pacific
+        Hospital of Long Beach</a> <a href=\"javascript:go_to_hospital(87)\" ><img
+        src=\"/images/icon63.png\" style=\"vertical-align:bottom;\"></a> </td>\n    <td>2776
+        Pacific Avenue  <br>Long Beach, CA 90806-2699 </td>\n    <td>562-595-1911</td>\n
+        \   \n    <td>21.90</td>\n    \n  </tr>\n\n   <tr >\n\t   <td><a href=\"/hospital/Long-Beach-Memorial-Med-Ctr-Long-Beach-CA\">Long
+        Beach Memorial Med Ctr</a> <a href=\"javascript:go_to_hospital(88)\" ><img
+        src=\"/images/icon63.png\" style=\"vertical-align:bottom;\"></a> </td>\n    <td>2801
+        Atlantic Avenue  <br>Long Beach, CA 90806-1737 </td>\n    <td>562-933-2000</td>\n
+        \   \n    <td>22.13</td>\n    \n  </tr>\n\n   <tr class='even'>\n\t   <td><a
+        href=\"/hospital/Miller-Childrens-Hospital-Long-Beach-CA\">Miller Children's
+        Hospital</a> <a href=\"javascript:go_to_hospital(89)\" ><img src=\"/images/icon63.png\"
+        style=\"vertical-align:bottom;\"></a> </td>\n    <td>2801 Atlantic Avenue
+        \ <br>Long Beach, CA 90806 </td>\n    <td>562-933-5437</td>\n    \n    <td>22.13</td>\n
+        \   \n  </tr>\n\n   <tr >\n\t   <td><a href=\"/hospital/Redgate-Memorial-Hospital-Long-Beach-CA\">Redgate
+        Memorial Hospital</a> <a href=\"javascript:go_to_hospital(90)\" ><img src=\"/images/icon63.png\"
+        style=\"vertical-align:bottom;\"></a> </td>\n    <td>1775 Chestnut Avenue
+        \ <br>Long Beach, CA 90813-1674 </td>\n    <td>562-599-8444</td>\n    \n    <td>22.88</td>\n
+        \   \n  </tr>\n\n   <tr class='even'>\n\t   <td><a href=\"/hospital/St-Mary-Medical-Center-Long-Beach-CA\">St
+        Mary Medical Center</a> <a href=\"javascript:go_to_hospital(91)\" ><img src=\"/images/icon63.png\"
+        style=\"vertical-align:bottom;\"></a> </td>\n    <td>1050 Linden Avenue  <br>Long
+        Beach, CA 90813 </td>\n    <td>562-491-9000</td>\n    \n    <td>23.74</td>\n
+        \   \n  </tr>\n\n   <tr >\n\t   <td><a href=\"/hospital/Kaiser-Foundation-Hospital-Baldwin-Park-CA\">Kaiser
+        Foundation Hospital</a> <a href=\"javascript:go_to_hospital(92)\" ><img src=\"/images/icon63.png\"
+        style=\"vertical-align:bottom;\"></a> </td>\n    <td>1011 Baldwin Park Boulevard
+        \ <br>Baldwin Park, CA 91706-5806 </td>\n    <td>626-851-1011</td>\n    \n
+        \   <td>23.76</td>\n    \n  </tr>\n\n   <tr class='even'>\n\t   <td><a href=\"/hospital/Little-Company-of-Mary-San-Pedro-CA\">Little
+        Company of Mary</a> <a href=\"javascript:go_to_hospital(93)\" ><img src=\"/images/icon63.png\"
+        style=\"vertical-align:bottom;\"></a> </td>\n    <td>1300 West Seventh Street
+        \ <br>San Pedro, CA 90732-3505 </td>\n    <td>310-832-3311</td>\n    \n    <td>23.84</td>\n
+        \   \n  </tr>\n\n   <tr >\n\t   <td><a href=\"/hospital/Henry-Mayo-Newhall-Mem-Hosp-Valencia-CA\">Henry
+        Mayo Newhall Mem Hosp</a> <a href=\"javascript:go_to_hospital(94)\" ><img
+        src=\"/images/icon63.png\" style=\"vertical-align:bottom;\"></a> </td>\n    <td>23845
+        Mcbean Parkway  <br>Valencia, CA 91355-2083 </td>\n    <td>661-253-8000</td>\n
+        \   \n    <td>23.97</td>\n    \n  </tr>\n\n   <tr class='even'>\n\t   <td><a
+        href=\"/hospital/Whittier-Hospital-Medical-Ctr-Whittier-CA\">Whittier Hospital
+        Medical Ctr</a> <a href=\"javascript:go_to_hospital(95)\" ><img src=\"/images/icon63.png\"
+        style=\"vertical-align:bottom;\"></a> </td>\n    <td>9080 Colima Road  <br>Whittier,
+        CA 90605-1600 </td>\n    <td>562-945-3561</td>\n    \n    <td>24.22</td>\n
+        \   \n  </tr>\n\n   <tr >\n\t   <td><a href=\"/hospital/Community-Hospital-Long-Beach-Long-Beach-CA\">Community
+        Hospital Long Beach</a> <a href=\"javascript:go_to_hospital(96)\" ><img src=\"/images/icon63.png\"
+        style=\"vertical-align:bottom;\"></a> </td>\n    <td>1720 Termino Avenue  <br>Long
+        Beach, CA 90804-2180 </td>\n    <td>562-498-1000</td>\n    \n    <td>24.54</td>\n
+        \   \n  </tr>\n\n   <tr class='even'>\n\t   <td><a href=\"/hospital/Simi-Valley-Hosp-Hlth-Care-Simi-Valley-CA\">Simi
+        Valley Hosp & Hlth Care</a> <a href=\"javascript:go_to_hospital(97)\" ><img
+        src=\"/images/icon63.png\" style=\"vertical-align:bottom;\"></a> </td>\n    <td>2975
+        North Sycamore Drive  <br>Simi Valley, CA 93065-1201 </td>\n    <td>805-955-6000</td>\n
+        \   \n    <td>24.69</td>\n    \n  </tr>\n\n   <tr >\n\t   <td><a href=\"/hospital/Tri-City-Regional-Medical-Ctr-Hawaiian-Gardens-CA\">Tri-City
+        Regional Medical Ctr</a> <a href=\"javascript:go_to_hospital(98)\" ><img src=\"/images/icon63.png\"
+        style=\"vertical-align:bottom;\"></a> </td>\n    <td>21530 South Pioneer Boulevard
+        \ <br>Hawaiian Gardens, CA 90716 </td>\n    <td>562-860-0401</td>\n    \n
+        \   <td>24.70</td>\n    \n  </tr>\n\n   <tr class='even'>\n\t   <td><a href=\"/hospital/Kindred-Hospital-La-Mirada-La-Mirada-CA\">Kindred
+        Hospital - La Mirada</a> <a href=\"javascript:go_to_hospital(99)\" ><img src=\"/images/icon63.png\"
+        style=\"vertical-align:bottom;\"></a> </td>\n    <td>14900 East Imperial Highway
+        \ <br>La Mirada, CA 90638 </td>\n    <td>562-944-1900</td>\n    \n    <td>24.70</td>\n
+        \   \n  </tr>\n\n   <tr >\n\t   <td><a href=\"/hospital/City-of-Hope-Natl-Medical-Ctr-Duarte-CA\">City
+        of Hope Natl Medical Ctr</a> <a href=\"javascript:go_to_hospital(100)\" ><img
+        src=\"/images/icon63.png\" style=\"vertical-align:bottom;\"></a> </td>\n    <td>1500
+        East Duarte Road  <br>Duarte, CA 91010-3012 </td>\n    <td>626-359-8111</td>\n
+        \   \n    <td>24.75</td>\n    \n  </tr>\n\n   <tr class='even'>\n\t   <td><a
+        href=\"/hospital/Vista-Specialty-Hospital-Baldwin-Park-CA\">Vista Specialty
+        Hospital</a> <a href=\"javascript:go_to_hospital(101)\" ><img src=\"/images/icon63.png\"
+        style=\"vertical-align:bottom;\"></a> </td>\n    <td>14148 East Francisquito
+        Avenue  <br>Baldwin Park, CA 91706 </td>\n    <td>626-388-2700</td>\n    \n
+        \   <td>24.78</td>\n    \n  </tr>\n\n   <tr >\n\t   <td><a href=\"/hospital/La-Palma-Intercommunity-Hosp-La-Palma-CA\">La
+        Palma Intercommunity Hosp</a> <a href=\"javascript:go_to_hospital(102)\" ><img
+        src=\"/images/icon63.png\" style=\"vertical-align:bottom;\"></a> </td>\n    <td>7901
+        Walker Street  <br>La Palma, CA 90623-1722 </td>\n    <td>714-670-7400</td>\n
+        \   \n    <td>26.05</td>\n    \n  </tr>\n\n   <tr class='even'>\n\t   <td><a
+        href=\"/hospital/Citrus-Valley-Medical-Center-West-Covina-CA\">Citrus Valley
+        Medical Center</a> <a href=\"javascript:go_to_hospital(103)\" ><img src=\"/images/icon63.png\"
+        style=\"vertical-align:bottom;\"></a> </td>\n    <td>1115 South Sunset Avenue
+        \ <br>West Covina, CA 91790-3940 </td>\n    <td>626-962-4011</td>\n    \n
+        \   <td>26.11</td>\n    \n  </tr>\n\n   <tr >\n\t   <td><a href=\"/hospital/Doctors-Hosp-of-West-Covina-West-Covina-CA\">Doctors
+        Hosp of West Covina</a> <a href=\"javascript:go_to_hospital(104)\" ><img src=\"/images/icon63.png\"
+        style=\"vertical-align:bottom;\"></a> </td>\n    <td>725 South Orange Avenue
+        \ <br>West Covina, CA 91790-2614 </td>\n    <td>626-338-8481</td>\n    \n
+        \   <td>26.14</td>\n    \n  </tr>\n\n   <tr class='even'>\n\t   <td><a href=\"/hospital/VA-Long-Beach-Healthcare-Syst-Long-Beach-CA\">VA
+        Long Beach Healthcare Syst</a> <a href=\"javascript:go_to_hospital(105)\"
+        ><img src=\"/images/icon63.png\" style=\"vertical-align:bottom;\"></a> </td>\n
+        \   <td>5901 East Seventh Street  <br>Long Beach, CA 90822-5201 </td>\n    <td>562-826-8000</td>\n
+        \   \n    <td>26.17</td>\n    \n  </tr>\n\n   <tr >\n\t   <td><a href=\"/hospital/Los-Alamitos-Medical-Center-Los-Alamitos-CA\">Los
+        Alamitos Medical Center</a> <a href=\"javascript:go_to_hospital(106)\" ><img
+        src=\"/images/icon63.png\" style=\"vertical-align:bottom;\"></a> </td>\n    <td>3751
+        Katella Avenue  <br>Los Alamitos, CA 90720-3164 </td>\n    <td>562-598-1311</td>\n
+        \   \n    <td>26.74</td>\n    \n  </tr>\n\n   <tr class='even'>\n\t   <td><a
+        href=\"/hospital/Kindred-Hospital-San-Gabriel-West-Covina-CA\">Kindred Hospital
+        San Gabriel</a> <a href=\"javascript:go_to_hospital(107)\" ><img src=\"/images/icon63.png\"
+        style=\"vertical-align:bottom;\"></a> </td>\n    <td>845 North Lark Ellen
+        Avenue  <br>West Covina, CA 91791-1069 </td>\n    <td>626-339-5451</td>\n
+        \   \n    <td>27.72</td>\n    \n  </tr>\n\n   <tr >\n\t   <td><a href=\"/hospital/Thousand-Oaks-Surgical-Hosp-Thousand-Oaks-CA\">Thousand
+        Oaks Surgical Hosp</a> <a href=\"javascript:go_to_hospital(108)\" ><img src=\"/images/icon63.png\"
+        style=\"vertical-align:bottom;\"></a> </td>\n    <td>401 East Rolling Oaks
+        Drive  <br>Thousand Oaks, CA 91361 </td>\n    <td>805-777-7750</td>\n    \n
+        \   <td>27.77</td>\n    \n  </tr>\n\n   <tr class='even'>\n\t   <td><a href=\"/hospital/Anaheim-General-Hospital-Anaheim-CA\">Anaheim
+        General Hospital</a> <a href=\"javascript:go_to_hospital(109)\" ><img src=\"/images/icon63.png\"
+        style=\"vertical-align:bottom;\"></a> </td>\n    <td>3350 West Ball Road  <br>Anaheim,
+        CA 92804-3799 </td>\n    <td>714-827-6700</td>\n    \n    <td>28.69</td>\n
+        \   \n  </tr>\n\n   <tr >\n\t   <td><a href=\"/hospital/West-Anaheim-Medical-Center-Anaheim-CA\">West
+        Anaheim Medical Center</a> <a href=\"javascript:go_to_hospital(110)\" ><img
+        src=\"/images/icon63.png\" style=\"vertical-align:bottom;\"></a> </td>\n    <td>3033
+        West Orange Avenue  <br>Anaheim, CA 92804-3184 </td>\n    <td>714-827-3000</td>\n
+        \   \n    <td>28.93</td>\n    \n  </tr>\n\n   <tr class='even'>\n\t   <td><a
+        href=\"/hospital/Citrus-Valley-Medical-Center-Covina-CA\">Citrus Valley Medical
+        Center</a> <a href=\"javascript:go_to_hospital(111)\" ><img src=\"/images/icon63.png\"
+        style=\"vertical-align:bottom;\"></a> </td>\n    <td>210 West San Bernardino
+        Road  <br>Covina, CA 91723-1901 </td>\n    <td>626-331-7331</td>\n    \n    <td>29.10</td>\n
+        \   \n  </tr>\n\n   <tr >\n\t   <td><a href=\"/hospital/Los-Robles-Hosp-Med-Center-Thousand-Oaks-CA\">Los
+        Robles Hosp & Med Center</a> <a href=\"javascript:go_to_hospital(112)\" ><img
+        src=\"/images/icon63.png\" style=\"vertical-align:bottom;\"></a> </td>\n    <td>215
+        West Janss Road  <br>Thousand Oaks, CA 91360-1847 </td>\n    <td>805-497-2727</td>\n
+        \   \n    <td>29.13</td>\n    \n  </tr>\n\n   <tr class='even'>\n\t   <td><a
+        href=\"/hospital/St-Jude-Medical-Center-Fullerton-CA\">St Jude Medical Center</a>
+        <a href=\"javascript:go_to_hospital(113)\" ><img src=\"/images/icon63.png\"
+        style=\"vertical-align:bottom;\"></a> </td>\n    <td>101 East Valencia Mesa
+        Drive  <br>Fullerton, CA 92835-3809 </td>\n    <td>714-992-3000</td>\n    \n
+        \   <td>29.82</td>\n    \n  </tr>\n\n   <tr >\n\t   <td><a href=\"/hospital/Kindred-Hospital-Brea-Brea-CA\">Kindred
+        Hospital-Brea</a> <a href=\"javascript:go_to_hospital(114)\" ><img src=\"/images/icon63.png\"
+        style=\"vertical-align:bottom;\"></a> </td>\n    <td>875 North Brea Boulevard
+        \ <br>Brea, CA 92821-2606 </td>\n    <td>714-529-6842</td>\n    \n    <td>30.63</td>\n
+        \   \n  </tr>\n\n   <tr class='even'>\n\t   <td><a href=\"/hospital/Anaheim-Memorial-Medical-Ctr-Anaheim-CA\">Anaheim
+        Memorial Medical Ctr</a> <a href=\"javascript:go_to_hospital(115)\" ><img
+        src=\"/images/icon63.png\" style=\"vertical-align:bottom;\"></a> </td>\n    <td>1111
+        West La Palma Avenue  <br>Anaheim, CA 92801-2881 </td>\n    <td>714-774-1450</td>\n
+        \   \n    <td>31.09</td>\n    \n  </tr>\n\n   <tr >\n\t   <td><a href=\"/hospital/Kindred-Hospital-Westminster-Westminster-CA\">Kindred
+        Hospital-Westminster</a> <a href=\"javascript:go_to_hospital(116)\" ><img
+        src=\"/images/icon63.png\" style=\"vertical-align:bottom;\"></a> </td>\n    <td>200
+        Hospital Circle  <br>Westminster, CA 92683-3910 </td>\n    <td>714-893-4541</td>\n
+        \   \n    <td>31.69</td>\n    \n  </tr>\n\n   <tr class='even'>\n\t   <td><a
+        href=\"/hospital/Western-Medical-Center-Anaheim-Anaheim-CA\">Western Medical
+        Center Anaheim</a> <a href=\"javascript:go_to_hospital(117)\" ><img src=\"/images/icon63.png\"
+        style=\"vertical-align:bottom;\"></a> </td>\n    <td>1025 South Anaheim Boulevard
+        \ <br>Anaheim, CA 92805-5806 </td>\n    <td>714-533-6220</td>\n    \n    <td>33.19</td>\n
+        \   \n  </tr>\n\n   <tr >\n\t   <td><a href=\"/hospital/Huntington-Beach-Hospital-Huntington-Beach-CA\">Huntington
+        Beach Hospital</a> <a href=\"javascript:go_to_hospital(118)\" ><img src=\"/images/icon63.png\"
+        style=\"vertical-align:bottom;\"></a> </td>\n    <td>17772 Beach Boulevard
+        \ <br>Huntington Beach, CA 92647-6819 </td>\n    <td>714-842-1473</td>\n    \n
+        \   <td>34.79</td>\n    \n  </tr>\n\n   <tr class='even'>\n\t   <td><a href=\"/hospital/Garden-Grove-Hosp-Med-Ctr-Garden-Grove-CA\">Garden
+        Grove Hosp & Med Ctr</a> <a href=\"javascript:go_to_hospital(119)\" ><img
+        src=\"/images/icon63.png\" style=\"vertical-align:bottom;\"></a> </td>\n    <td>12601
+        Garden Grove Boulevard  <br>Garden Grove, CA 92843-1908 </td>\n    <td>714-537-5160</td>\n
+        \   \n    <td>34.79</td>\n    \n  </tr>\n\n   <tr >\n\t   <td><a href=\"/hospital/Univ-of-CA-Irvine-Med-Ctr-Orange-CA\">Univ
+        of CA Irvine Med Ctr</a> <a href=\"javascript:go_to_hospital(120)\" ><img
+        src=\"/images/icon63.png\" style=\"vertical-align:bottom;\"></a> </td>\n    <td>101
+        The City Drive  <br>Orange, CA 92868-3298 </td>\n    <td>714-456-6011</td>\n
+        \   \n    <td>35.27</td>\n    \n  </tr>\n\n   <tr class='even'>\n\t   <td><a
+        href=\"/hospital/Orange-Coast-Memorial-Med-Ctr-Fountain-Valley-CA\">Orange
+        Coast Memorial Med Ctr</a> <a href=\"javascript:go_to_hospital(121)\" ><img
+        src=\"/images/icon63.png\" style=\"vertical-align:bottom;\"></a> </td>\n    <td>9920
+        Talbert Avenue  <br>Fountain Valley, CA 92708-5153 </td>\n    <td>714-378-7000</td>\n
+        \   \n    <td>36.22</td>\n    \n  </tr>\n\n   <tr >\n\t   <td><a href=\"/hospital/Kindred-Hospital-Santa-Ana-Santa-Ana-CA\">Kindred
+        Hospital Santa Ana</a> <a href=\"javascript:go_to_hospital(122)\" ><img src=\"/images/icon63.png\"
+        style=\"vertical-align:bottom;\"></a> </td>\n    <td>1901 North College Avenue
+        \ <br>Santa Ana, CA 92706-2334 </td>\n    <td>714-564-7800</td>\n    \n    <td>36.33</td>\n
+        \   \n  </tr>\n\n   <tr class='even'>\n\t   <td><a href=\"/hospital/Fountain-Valley-Reg-Hosp-Fountain-Valley-CA\">Fountain
+        Valley Reg Hosp</a> <a href=\"javascript:go_to_hospital(123)\" ><img src=\"/images/icon63.png\"
+        style=\"vertical-align:bottom;\"></a> </td>\n    <td>17100 Euclid Street  <br>Fountain
+        Valley, CA 92708-4043 </td>\n    <td>714-966-7200</td>\n    \n    <td>36.38</td>\n
+        \   \n  </tr>\n\n   <tr >\n\t   <td><a href=\"/hospital/Coastal-Communities-Hospital-Santa-Ana-CA\">Coastal
+        Communities Hospital</a> <a href=\"javascript:go_to_hospital(124)\" ><img
+        src=\"/images/icon63.png\" style=\"vertical-align:bottom;\"></a> </td>\n    <td>2701
+        South Bristol Street  <br>Santa Ana, CA 92704-6201 </td>\n    <td>714-754-5454</td>\n
+        \   \n    <td>38.77</td>\n    \n  </tr>\n\n   <tr class='even'>\n\t   <td><a
+        href=\"/hospital/FAIRVIEW-DEVELOPMENTAL-CENTER-COSTA-MESA-CA\">FAIRVIEW DEVELOPMENTAL
+        CENTER</a> <a href=\"javascript:go_to_hospital(125)\" ><img src=\"/images/icon63.png\"
+        style=\"vertical-align:bottom;\"></a> </td>\n    <td>2501 HARBOR BOULEVARD
+        \   <br>COSTA MESA, CA 92626 </td>\n    <td>714-957-5000</td>\n    \n    <td>39.61</td>\n
+        \   \n  </tr>\n\n   <tr >\n\t   <td><a href=\"/hospital/College-Hospital-Costa-Mesa-Costa-Mesa-CA\">College
+        Hospital Costa Mesa</a> <a href=\"javascript:go_to_hospital(126)\" ><img src=\"/images/icon63.png\"
+        style=\"vertical-align:bottom;\"></a> </td>\n    <td>301 Victoria Street  <br>Costa
+        Mesa, CA 92627-7131 </td>\n    <td>949-642-2734</td>\n    \n    <td>40.41</td>\n
+        \   \n  </tr>\n\n</table>\n<p>\n  <a href=\"/\">New Hospital Search</a>\n</p>\n</div>\n\n\n</div>\n<div
+        id=\"ad\" class=\"column span-24 \">\n  <script type=\"text/javascript\"><!--\n
+        \ google_ad_client = \"ca-pub-3250171653939752\";\n  /* Hospital bottom 728x90
+        */\n  google_ad_slot = \"2674518214\";\n  google_ad_width = 728;\n  google_ad_height
+        = 90;\n  //-->\n  </script>\n  <script type=\"text/javascript\"\n          src=\"http://pagead2.googlesyndication.com/pagead/show_ads.js\">\n
+        \ </script>\n</div>\n<div id=\"footer\" class=\"column span-24 last\">\n<div
+        id=\"copyright\">\n   &copy;2013 US Hospital Finder<span class=\"trade\">&trade;</span>.
+        \ All rights reserved. <a href=\"/abouts\">About us</a> <a href=\"/abouts/#terms\">Terms
+        of use</a> <a href=\"/contact/contact\">Contact us</a>.\n</div>\n</div>\n</div>\n\n\n<script
+        type=\"text/javascript\">\nvar gaJsHost = ((\"https:\" == document.location.protocol)
+        ? \"https://ssl.\" : \"http://www.\");\ndocument.write(unescape(\"%3Cscript
+        src='\" + gaJsHost + \"google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E\"));\n</script>\n<script
+        type=\"text/javascript\">\nvar pageTracker = _gat._getTracker(\"UA-2451778-2\");\npageTracker._initData();\npageTracker._trackPageview();\n</script>\n\n\n</body>\n</html>\n"
+    http_version: 
+  recorded_at: Tue, 06 Aug 2013 00:35:18 GMT
+- request:
+    method: get
+    uri: http://www.ushospitalfinder.com/hospital/Cedars-Sinai-Medical-Center-Los-Angeles-CA
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.8.8
+  response:
+    status:
+      code: 200
+      message: 
+    headers:
+      server:
+      - nginx/0.7.62
+      date:
+      - Tue, 06 Aug 2013 00:53:23 GMT
+      content-type:
+      - text/html; charset=utf-8
+      transfer-encoding:
+      - chunked
+      connection:
+      - close
+      x-runtime:
+      - '76'
+      etag:
+      - '"ad2b9753a8bc1eedced3a22976941659"'
+      cache-control:
+      - private, max-age=0, must-revalidate
+      set-cookie:
+      - _hospital_maps_session=BAh7BzoPc2Vzc2lvbl9pZCIlMmM5Y2FjNzYzZmE2ZTkyNTVmZTM0YWVkODhhYjA2ZTIiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhhc2h7BjoLbm90aWNlIgAGOgpAdXNlZHsGOwdG--4fbd4ecec3a45ec0abbc6cb73d3c474438de4465;
+        path=/; HttpOnly
+    body:
+      encoding: UTF-8
+      string: "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\"\n
+        \      \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\">\n\n\n<html
+        xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en\" lang=\"en\" itemscope
+        itemtype=\"http://schema.org/Hospital\">\n\n<head>\n  <meta http-equiv=\"content-type\"
+        content=\"text/html;charset=UTF-8\" />\n  <meta name=\"description\" content=\"Cedars-Sinai
+        Medical Center is located in Los Angeles, CA 90048-1865. Cedars-Sinai Medical
+        Center has 914 beds.  More information such as phone number, address, owner,
+        services, ratings and quality data are also available.\" />\n  <meta http-equiv=\"keywords\"
+        content=\"hospital, hospitals, directory, guide, web sites, direction, services,
+        information\"/>\n  \n  <meta itemprop=\"name\" content=\"Cedars-Sinai Medical
+        Center\">\n  <meta itemprop=\"description\" content=\"Cedars-Sinai Medical
+        Center is located in Los Angeles, CA 90048-1865. Cedars-Sinai Medical Center
+        has 914 beds.  More information such as phone number, address, owner, services,
+        ratings and quality data are also available.\">\n  \n  \n  <title>Cedars-Sinai
+        Medical Center - US Hospital Finder</title>\n  \n  <link rel=\"search\" type=\"application/opensearchdescription+xml\"
+        title=\"US Hospital Finder\" href=\"/ushospitalfinderplugin.xml\" />\n  <link
+        href=\"/stylesheets/screen.css?1262470777\" media=\"screen,projection\" rel=\"stylesheet\"
+        type=\"text/css\" />\n  <link href=\"/stylesheets/print.css?1262470777\" media=\"print\"
+        rel=\"stylesheet\" type=\"text/css\" />\n  <!--[if IE]><link href=\"/stylesheets/ie.css?1262470777\"
+        media=\"screen, projection\" rel=\"stylesheet\" type=\"text/css\" /><![endif]-->\n
+        \ <link href=\"/stylesheets/typography.css?1262470777\" media=\"screen\" rel=\"stylesheet\"
+        type=\"text/css\" />\n  <link href=\"/stylesheets/hospital.css?1262470777\"
+        media=\"screen\" rel=\"stylesheet\" type=\"text/css\" />\n  <script src=\"/javascripts/prototype.js?1262470777\"
+        type=\"text/javascript\"></script>\n  <script src=\"/javascripts/application.js?1262470777\"
+        type=\"text/javascript\"></script>\n\n  <script type=\"text/javascript\"\n
+        \   src=\"http://maps.google.com/maps/api/js?v=3.1&sensor=true\">\n  </script>\n\n<script
+        type=\"text/javascript\" src=\"http://apis.google.com/js/plusone.js\"></script>\n</head>\n<body>\n\n\t<script>\n\t\t
+        \     var map;\n    var html;\n    var to_html;\n    var from_html;\n    var
+        marker;\n    function createMarker(point, text, icon_i) {\n          marker
+        = new google.maps.Marker({position:point,icon:icon_i});\n            google.maps.event.addListener(marker,
+        \"click\", function() {\n\t            var infowindow = new  google.maps.InfoWindow({content:text});\n\t
+        \           infowindow.open(map,marker);\n            });\n     }\n    function
+        initialize() {\n        var crossIcon = new google.maps.MarkerImage('/images/icon63.png',new
+        google.maps.Size(32,32),new google.maps.Point(0,0),new google.maps.Point(16,32));\n\n\t
+        \  var mapOptions = {\n\t\t     zoom: 14,\n\t\t\t mapTypeId: google.maps.MapTypeId.ROADMAP\n\t\t};\n\n\t
+        \   map = new google.maps.Map(document.getElementById(\"map\"),mapOptions);\n
+        \       map.setCenter(new google.maps.LatLng(34.07671, -118.381052));\n        var
+        point = new google.maps.LatLng(34.07671,-118.381052);\n        \n        html
+        = 'Cedars-Sinai Medical Center <br> 8700 Beverly Boulevard  <br> Los Angeles,
+        CA 90048-1865';\n        to_html = html + '<br>Directions: <b>To here</b>
+        - <a href=\"javascript:fromhere()\">From here</a>' +\n           '<br>Start
+        address:<form action=\"/direction/Cedars-Sinai-Medical-Center-Los-Angeles-CA\"
+        method=\"post\">' +\n           '<input type=\"text\" SIZE=40 MAXLENGTH=40
+        name=\"saddr\" id=\"saddr\" value=\"\" /><br>' +\n           '<INPUT value=\"Get
+        Directions\" TYPE=\"SUBMIT\">' +\n           '<input type=\"hidden\" id=\"daddr\"
+        name=\"daddr\" value=\"'+\"Cedars-Sinai Medical Center\"+ \"@\"+ 34.07671
+        + ',' + -118.381052 + '\"/>';\n        \n        from_html = html + '<br>Directions:
+        <a href=\"javascript:tohere()\">To here</a> - <b>From here</b>' +\n           '<br>End
+        address:<form action=\"/direction/Cedars-Sinai-Medical-Center-Los-Angeles-CA\"
+        method=\"post\">' +\n           '<input type=\"text\" SIZE=40 MAXLENGTH=40
+        name=\"daddr\" id=\"daddr\" value=\"\" /><br>' +\n           '<INPUT value=\"Get
+        Directions\" TYPE=\"SUBMIT\">' +\n           '<input type=\"hidden\" id=\"saddr\"
+        name=\"saddr\" value=\"'+\"Cedars-Sinai Medical Center\"+\"@\"+ 34.07671 +
+        ',' + -118.381052 +'\"/>';\n        // The inactive version of the direction
+        info\n        html = html + '<br>Directions: <a href=\"javascript:tohere()\">To
+        here</a> - <a href=\"javascript:fromhere()\">From here</a>';\n        createMarker(point,html,crossIcon);\n
+        \       marker.setMap(map);\n        var infowindow = new  google.maps.InfoWindow({content:html});\n
+        \       infowindow.open(map,marker);\n    }\n\n    // functions that open
+        the directions forms\n    function tohere() {\n         var infowindow = new
+        \ google.maps.InfoWindow({content:to_html});\n         infowindow.open(map,marker);\n
+        \   }\n\n    function fromhere() {\n\t      var infowindow = new  google.maps.InfoWindow({content:from_html});\n
+        \         infowindow.open(map,marker);\n     }\n\n    \n\n\n\t\t  google.maps.event.addDomListener(window,
+        'load', initialize);\n\t</script>\n\n<div class=\"container\">\n<div id=\"content\"
+        class=\"column span-24\">\n<p style=\"color: green\"></p>\n\n\n<div id=\"detail-main\"
+        class=\"span-24\">\n<div id=\"top-ad\">\n  <script type=\"text/javascript\"><!--\n
+        \ google_ad_client = \"ca-pub-3250171653939752\";\n  /* hospitals top 728x90
+        */\n  google_ad_slot = \"6801665236\";\n  google_ad_width = 728;\n  google_ad_height
+        = 90;\n  //-->\n  </script>\n  <script type=\"text/javascript\"\n          src=\"http://pagead2.googlesyndication.com/pagead/show_ads.js\">\n
+        \ </script>\n</div>\n<h2><a href=\"/\">US Hospital Finder</a><span class=\"trade\">&trade;</span>:
+        Cedars-Sinai Medical Center</h2>\n<br/>\n<form action=\"/hospitals/search\"
+        method=\"get\" onsubmit=\"return submitSearchForm($('search_query').value+'
+        USA');\">\n  <b>Location:</b> <input id=\"search_query\" name=\"search_query\"
+        size=\"65\" type=\"text\" value=\"\" />\n  <input id=\"lat\" name=\"lat\"
+        type=\"hidden\" />\n  <input id=\"lng\" name=\"lng\" type=\"hidden\" />\n
+        \ <input id=\"cgeo\" name=\"cgeo\" type=\"hidden\" />\n  <input name=\"commit\"
+        type=\"submit\" value=\"Search\" />\n</form>\n\n<script type=\"text/javascript\">\n
+        \  function submitSearchForm(location){\n       getLocationFromGoogle(location);\n
+        \      return false;\n   }\n</script>\n\n<br/>\n<div id=\"map\" style=\"width:
+        700px; height: 500px\"></div>\n<br/>\n<div id=\"first-half\">\n<div id=\"detail-center\"
+        class=\"span-17\">\n<p>\n  <b>Name:</b>\n  Cedars-Sinai Medical Center\n</p>\n<p>\n
+        \ <b>Address:</b>\n  8700 Beverly Boulevard\n  \n   Los Angeles, CA 90048-1865\n</p>\n\n<p>\n
+        \ <b>Phone:</b>\n  310-423-5000\n</p>\n<p>\n  <b>Number of Beds:</b>\n  914\n</p>\n<p>\n
+        \ <b>Type:</b>\n  Nongovernment, Not-for-profit\n</p>\n<p>\n    <b>System:</b>\n
+        \ \n</p>\n<p>\n  <b>Website:</b>\n  <a href=\"\">http://www.cedars-sinai.edu</a>\n</p>\n\n<p>\n
+        \ JCAHO Accredited\n</p>\n\n<p>\n  <b>Warning:</b>\n  Always call 911 in the
+        case of emergency.  Always call the hospital to confirm its location, hours
+        of operation and services before heading to the hospital.\n</p>\n<div id=\"sharing-buttons\">\n<g:plusone></g:plusone>\n<iframe
+        src=\"http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.ushospitalfinder.com%2Fhospital%2FCedars-Sinai-Medical-Center-Los-Angeles-CA&amp;send=true&amp;layout=standard&amp;width=450&amp;show_faces=true&amp;action=recommend&amp;colorscheme=light&amp;font&amp;height=30\"
+        scrolling=\"no\" frameborder=\"0\" style=\"border:none; overflow:hidden; width:450px;
+        height:30px;\" allowTransparency=\"true\"></iframe>\n</div>\n<p>\n  <a href=\"/\">New
+        Hospital Search</a><br/>\n  <a href=\"/hospitals/post_review/Cedars-Sinai-Medical-Center-Los-Angeles-CA\">Submit
+        a  review</a><br/>\n  <a href=\"http://itunes.apple.com/us/app/ushospfinder/id412630399\">US
+        Hospital Finder iPhone/iPad app</a>  \n  <a href=\"https://market.android.com/details?id=com.ushospitalfinder\">US
+        Hospital Finder Android app</a>\n</p>\n\n<p>\n  <b>Services:</b>\n  <ul>\n
+        \ \n    <li> Angioplasty</li>\n  \n    <li> Breast Cancer Screening</li>\n
+        \ \n    <li> Cardiac Cath Lab</li>\n  \n    <li> Drug Dependency Care</li>\n
+        \ \n    <li> Emergency Department</li>\n  \n    <li> End of Life Services:
+        Hospice Program</li>\n  \n    <li> General Medical Surgical</li>\n  \n    <li>
+        Geriatric Services</li>\n  \n    <li> HIV-AIDS Services</li>\n  \n    <li>
+        Health Screenings</li>\n  \n    <li> Hemodialysis</li>\n  \n    <li> Lithotripsy</li>\n
+        \ \n    <li> Medical Surgical Intensive Care</li>\n  \n    <li> Neonatal Intensive
+        Care</li>\n  \n    <li> Nutrition programs</li>\n  \n    <li> Occupational
+        Health</li>\n  \n    <li> Oncology</li>\n  \n    <li> Open heart surgery</li>\n
+        \ \n    <li> Outpatient Care</li>\n  \n    <li> Outpatient Physical Rehab</li>\n
+        \ \n    <li> Outpatient surgery</li>\n  \n    <li> Patient Education Center</li>\n
+        \ \n    <li> Pediatric Intensive Care</li>\n  \n    <li> Pediatric Medical
+        Surgical</li>\n  \n    <li> Physical Rehabilitation</li>\n  \n    <li> Psychiatric
+        Care</li>\n  \n    <li> Psychiatric Outpatient Services</li>\n  \n    <li>
+        Radiation Therapy</li>\n  \n    <li> Reproductive Health</li>\n  \n    <li>
+        Support Groups</li>\n  \n    <li> Trauma Center</li>\n  \n    <li> Transplant
+        Services</li>\n  \n    <li> Women's Health</li>\n  \n </ul>\n</p>\n\n</div>\n<div
+        id=\"right-rail\" class=\"span-last\">\n  <script type=\"text/javascript\"><!--\ngoogle_ad_client
+        = \"ca-pub-3250171653939752\";\n/* hospital right rails */\ngoogle_ad_slot
+        = \"5923956216\";\ngoogle_ad_width = 160;\ngoogle_ad_height = 600;\n//-->\n</script>\n<script
+        type=\"text/javascript\"\n        src=\"http://pagead2.googlesyndication.com/pagead/show_ads.js\">\n</script>\n</div>\n</div>\n\n<br/>\n\n<div
+        id=\"second-half\" class=\"span-24\">\n\n\n <h4>Hospital Quality and Rating
+        information</h4>\n <p>Data based on Health Quality Alliance database</p>\n\n
+        \n  <p>\n   <b>Mortality Rate at Cedars-Sinai Medical Center :</b><br>\n    \n
+        \     Heart Attack Death (Mortality) Rates: 0.0% (12.3)<br>\n    \n      Heart
+        Attack Readmission Rates: 0.0% (19.3)<br>\n    \n      Heart Failure Death
+        (Mortality) Rates: 0.0% (7.3)<br>\n    \n      Heart Failure Readmission Rates:
+        0.0% (23.3)<br>\n    \n      Pneumonia (PN) 30-Day Mortality Rate: 0.0% (6.8)<br>\n
+        \   \n      Pneumonia Readmission Rates: 0.0% (19)<br>\n    \n  </p>\n  <p>\n
+        \ <b>\n     Mortality Rate for hospitals in US:</b><br>\n  \n      Acute Myocardial
+        Infarction (AMI) 30-Day Mortality Rate: 15% <br>\n   \n      Heart Failure
+        (HF) 30-Day Mortality Rate: 11% <br>\n   \n      Pneumonia (PN) 30-Day Mortality
+        Rate: 12% <br>\n   \n      Acute Myocardial Infarction (AMI) 30-Day Readmission
+        Rate: 19% <br>\n   \n      Heart Failure (HF) 30-Day Readmission Rate: 24%
+        <br>\n   \n      Pneumonia (PN) 30-Day Readmission Rate: 18% <br>\n   \n  </b>\n
+        \ </p>\n  <p>\n  <b>Mortality Rate for hospitals in California:</b><br>\n
+        \ \n      Acute Myocardial Infarction (AMI) 30-Day Mortality Rate: (Better
+        than U.S. National Rate) : 6 number of hospitals<br>\n   \n      Acute Myocardial
+        Infarction (AMI) 30-Day Mortality Rate: (No different than U.S. National Rate)
+        : 224 number of hospitals<br>\n   \n      Acute Myocardial Infarction (AMI)
+        30-Day Mortality Rate: (Number of Cases Too Small*) : 107 number of hospitals<br>\n
+        \  \n      Acute Myocardial Infarction (AMI) 30-Day Mortality Rate: (Worse
+        than U.S. National Rate) : 0 number of hospitals<br>\n   \n      Acute Myocardial
+        Infarction (AMI) 30-Day Readmission Rate: (Better than U.S. National Rate)
+        : 2 number of hospitals<br>\n   \n      Acute Myocardial Infarction (AMI)
+        30-Day Readmission Rate: (No different than U.S. National Rate) : 201 number
+        of hospitals<br>\n   \n      Acute Myocardial Infarction (AMI) 30-Day Readmission
+        Rate: (Number of Cases Too Small*) : 126 number of hospitals<br>\n   \n      Acute
+        Myocardial Infarction (AMI) 30-Day Readmission Rate: (Worse than U.S. National
+        Rate) : 2 number of hospitals<br>\n   \n      Heart failure (HF) 30-Day Mortality
+        Rate: (Better than U.S. National Rate) : 26 number of hospitals<br>\n   \n
+        \     Heart failure (HF) 30-Day Mortality Rate: (No different than U.S. National
+        Rate) : 259 number of hospitals<br>\n   \n      Heart failure (HF) 30-Day
+        Mortality Rate: (Number of Cases Too Small*) : 52 number of hospitals<br>\n
+        \  \n      Heart failure (HF) 30-Day Mortality Rate: (Worse than U.S. National
+        Rate) : 9 number of hospitals<br>\n   \n      Heart failure (HF) 30-Day Readmission
+        Rate: (Better than U.S. National Rate) : 7 number of hospitals<br>\n   \n
+        \     Heart failure (HF) 30-Day Readmission Rate: (No different than U.S.
+        National Rate) : 291 number of hospitals<br>\n   \n      Heart failure (HF)
+        30-Day Readmission Rate: (Number of Cases Too Small*) : 46 number of hospitals<br>\n
+        \  \n      Heart failure (HF) 30-Day Readmission Rate: (Worse than U.S. National
+        Rate) : 4 number of hospitals<br>\n   \n      Pneumonia (PN) 30-Day Mortality
+        Rate: (Better than U.S. National Rate) : 27 number of hospitals<br>\n   \n
+        \     Pneumonia (PN) 30-Day Mortality Rate: (No different than U.S. National
+        Rate) : 258 number of hospitals<br>\n   \n      Pneumonia (PN) 30-Day Mortality
+        Rate: (Number of Cases Too Small*) : 49 number of hospitals<br>\n   \n      Pneumonia
+        (PN) 30-Day Mortality Rate: (Worse than U.S. National Rate) : 17 number of
+        hospitals<br>\n   \n      Pneumonia (PN) 30-Day Readmission Rate: (Better
+        than U.S. National Rate) : 0 number of hospitals<br>\n   \n      Pneumonia
+        (PN) 30-Day Readmission Rate: (No different than U.S. National Rate) : 297
+        number of hospitals<br>\n   \n      Pneumonia (PN) 30-Day Readmission Rate:
+        (Number of Cases Too Small*) : 52 number of hospitals<br>\n   \n      Pneumonia
+        (PN) 30-Day Readmission Rate: (Worse than U.S. National Rate) : 3 number of
+        hospitals<br>\n   \n  \n  </p>\n \n   <p>\n   <b>How patients rated Cedars-Sinai
+        Medical Center</b><br>\n    \n   \n       \n         How do patients rate
+        the hospital overall?<br>\n         \n       \n        &nbsp;&nbsp;Patients
+        who gave a rating of '6' or lower (low): 4 % of the patients who have completed
+        the survey<br>\n   \n       \n        &nbsp;&nbsp;Patients who gave a rating
+        of '9' or '10' (high): 81 % of the patients who have completed the survey<br>\n
+        \  \n       \n        &nbsp;&nbsp;Patients who gave a rating of'7' or '8'
+        (medium): 15 % of the patients who have completed the survey<br>\n   \n       \n
+        \        How often did doctors communicate well with patients?<br>\n         \n
+        \      \n        &nbsp;&nbsp;Doctors 'always' communicated well: 78 % of the
+        patients who have completed the survey<br>\n   \n       \n        &nbsp;&nbsp;Doctors
+        'sometimes' or 'never' communicated well: 5 % of the patients who have completed
+        the survey<br>\n   \n       \n        &nbsp;&nbsp;Doctors 'usually' communicated
+        well: 17 % of the patients who have completed the survey<br>\n   \n       \n
+        \        How often did nurses communicate well with patients?<br>\n         \n
+        \      \n        &nbsp;&nbsp;Nurses 'always' communicated well: 73 % of the
+        patients who have completed the survey<br>\n   \n       \n        &nbsp;&nbsp;Nurses
+        'sometimes' or 'never' communicated well: 5 % of the patients who have completed
+        the survey<br>\n   \n       \n        &nbsp;&nbsp;Nurses 'usually' communicated
+        well: 22 % of the patients who have completed the survey<br>\n   \n       \n
+        \        How often did patients receive help quickly from hospital staff?<br>\n
+        \        \n       \n        &nbsp;&nbsp;Patients 'always' received help as
+        soon as they wanted: 57 % of the patients who have completed the survey<br>\n
+        \  \n       \n        &nbsp;&nbsp;Patients 'sometimes' or 'never' received
+        help as soon as they wanted: 10 % of the patients who have completed the survey<br>\n
+        \  \n       \n        &nbsp;&nbsp;Patients 'usually' received help as soon
+        as they wanted: 33 % of the patients who have completed the survey<br>\n   \n
+        \      \n         How often did staff explain about medicines before giving
+        them to patients?<br>\n         \n       \n        &nbsp;&nbsp;Staff 'always'
+        explained: 55 % of the patients who have completed the survey<br>\n   \n       \n
+        \       &nbsp;&nbsp;Staff 'sometimes' or 'never' explained: 25 % of the patients
+        who have completed the survey<br>\n   \n       \n        &nbsp;&nbsp;Staff
+        'usually' explained: 20 % of the patients who have completed the survey<br>\n
+        \  \n       \n         How often was patients pain well controlled?<br>\n
+        \        \n       \n        &nbsp;&nbsp;Pain was 'always' well controlled:
+        67 % of the patients who have completed the survey<br>\n   \n       \n        &nbsp;&nbsp;Pain
+        was 'sometimes' or 'never' well controlled: 7 % of the patients who have completed
+        the survey<br>\n   \n       \n        &nbsp;&nbsp;Pain was 'usually' well
+        controlled: 26 % of the patients who have completed the survey<br>\n   \n
+        \      \n         How often was the area around patients rooms kept quiet
+        at night?<br>\n         \n       \n        &nbsp;&nbsp;'Always' quiet at night:
+        52 % of the patients who have completed the survey<br>\n   \n       \n        &nbsp;&nbsp;'Sometimes'
+        or 'never' quiet at night: 12 % of the patients who have completed the survey<br>\n
+        \  \n       \n        &nbsp;&nbsp;'Usually' quiet at night: 36 % of the patients
+        who have completed the survey<br>\n   \n       \n         How often were the
+        patients rooms and bathrooms kept clean?<br>\n         \n       \n        &nbsp;&nbsp;Room
+        was 'always' clean: 71 % of the patients who have completed the survey<br>\n
+        \  \n       \n        &nbsp;&nbsp;Room was 'sometimes' or 'never' clean: 7
+        % of the patients who have completed the survey<br>\n   \n       \n        &nbsp;&nbsp;Room
+        was 'usually' clean: 22 % of the patients who have completed the survey<br>\n
+        \  \n       \n         Were patients given information about what to do during
+        their recovery at home?<br>\n         \n       \n        &nbsp;&nbsp;No, staff
+        'did not' give patients this information: 17 % of the patients who have completed
+        the survey<br>\n   \n       \n        &nbsp;&nbsp;Yes, staff 'did' give patients
+        this information: 83 % of the patients who have completed the survey<br>\n
+        \  \n       \n         Would patients recommend the hospital to friends and
+        family?<br>\n         \n       \n        &nbsp;&nbsp;'NO', patients would
+        not recommend the hospital (they probably would not or definitely would not
+        recommend it): 2 % of the patients who have completed the survey<br>\n   \n
+        \      \n        &nbsp;&nbsp;'YES', patients would definitely recommend the
+        hospital: 83 % of the patients who have completed the survey<br>\n   \n       \n
+        \       &nbsp;&nbsp;'YES', patients would probably recommend the hospital:
+        15 % of the patients who have completed the survey<br>\n   \n    </p>\n  \n\n\n<a
+        href=\"/contact/contact\">Report incorrect information</a>\n<br/>\n<div id='reviews'>\n\n<a
+        href=\"/hospitals/post_review/Cedars-Sinai-Medical-Center-Los-Angeles-CA\">Submit
+        a  review</a>\n</div>\n<br/>\n<div id=\"other-links\">\n\n\n\n <table>\n   <tr>\n
+        \    <td colspan=\"3\">Other hospitals nearby:</td>\n   </tr>\n   <tr>\n     \n
+        \    <td><a href=\"/hospital/MIRACLE-MILE-MEDICAL-CENTER-LOS-ANGELES-CA\">MIRACLE
+        MILE MEDICAL CENTER</a></td>\n     \n     <td><a href=\"/hospital/Olympia-Medical-Center-Los-Angeles-CA\">Olympia
+        Medical Center</a></td>\n     \n     <td><a href=\"/hospital/CENTURY-CITY-DOCTORS-HOSPITAL-LOS-ANGELES-CA\">CENTURY
+        CITY DOCTORS HOSPITAL</a></td>\n     \n     <td><a href=\"/hospital/Kaiser-Foundation-Hospital-Los-Angeles-CA\">Kaiser
+        Foundation Hospital</a></td>\n     \n     <td><a href=\"/hospital/Hollywood-Community-Hospital-Los-Angeles-CA\">Hollywood
+        Community Hospital</a></td>\n     \n   </tr>\n   <tr>\n\t<td><a href=\"/hospitals-by-city/hospitals-in-Los-Angeles-CA\">Hospitals
+        in or near Los Angeles, CA</a>\n    <td><a href=\"/hospitals-in/California\">Hospitals
+        in CA</a><td>\n   </tr>\n   <tr>\n   </tr>\n </table>\n\n<table>\n\t<tr>\n\t\t<td>Other
+        related nearby links:</td>\n    </tr>\n    <tr>\n\t   <td><a href=\"http://usnursinghomefinder.com/list-by-city/nursing-homes-in-Los-Angeles-CA\">Nursing
+        homes in or near Los Angeles, CA</a></td>\n\t   <td><a href=\"http://usnursinghomefinder.com/list-by-state/nursing-homes-in-California-CA\">Nursing
+        homes in CA</a></td>\n\t   <td><a href=\"http://ushomecarefinder.com/in-home-care-home-health-list-by-city/home-health-care-in-Los-Angeles-CA\">In-home
+        care and home health agencies in or near Los Angeles, CA</a></td>\n\t   <td><a
+        href=\"http://ushomecarefinder.com/in-home-care-home-health-list-by-state/home-health-care-in-California-CA\">In-home
+        care and home health agencies in CA</a></td>\n\t</tr>\n\t<tr>\n\t\t<td><a
+        href=\"http://usdialysisfinder.com/dialysis-centers-facilities-list-by-city/dialysis-centers-facilities-in-Los-Angeles-CA\">Dialysis
+        centers/facilities in or near Los Angeles, CA</a></td>\n\t\t<td><a href=\"http://usdialysisfinder.com/dialysis-centers-facilities-list-by-state/dialysis-centers-facilities-in-California-CA\">Dialysis
+        centers/facilities in CA</a></td>\n\t\t<td></td>\n\t\t<td></td>\n\t</tr>\n</table>\n</div>\n<br/>\nIf
+        you like this site, please try <a href=\"http://usnursinghomefinder.com\">US
+        Nursing Home Finder</a>, <a href=\"http://ushomecarefinder.com\">US Home Care
+        Finder</a>, <a href=\"http://findgoodschool.com\">Find Good School</a> and
+        <a href=\"http://usdialysisfinder.com\">US Dialysis Finder</a>\n\n<br/>\n<br/>\n</div>\n</div>\n\n\n\n</div>\n<div
+        id=\"ad\" class=\"column span-24 \">\n  <script type=\"text/javascript\"><!--\n
+        \ google_ad_client = \"ca-pub-3250171653939752\";\n  /* Hospital bottom 728x90
+        */\n  google_ad_slot = \"2674518214\";\n  google_ad_width = 728;\n  google_ad_height
+        = 90;\n  //-->\n  </script>\n  <script type=\"text/javascript\"\n          src=\"http://pagead2.googlesyndication.com/pagead/show_ads.js\">\n
+        \ </script>\n</div>\n<div id=\"footer\" class=\"column span-24 last\">\n<div
+        id=\"copyright\">\n   &copy;2013 US Hospital Finder<span class=\"trade\">&trade;</span>.
+        \ All rights reserved. <a href=\"/abouts\">About us</a> <a href=\"/abouts/#terms\">Terms
+        of use</a> <a href=\"/contact/contact\">Contact us</a>.\n</div>\n</div>\n</div>\n\n\n<script
+        type=\"text/javascript\">\nvar gaJsHost = ((\"https:\" == document.location.protocol)
+        ? \"https://ssl.\" : \"http://www.\");\ndocument.write(unescape(\"%3Cscript
+        src='\" + gaJsHost + \"google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E\"));\n</script>\n<script
+        type=\"text/javascript\">\nvar pageTracker = _gat._getTracker(\"UA-2451778-2\");\npageTracker._initData();\npageTracker._trackPageview();\n</script>\n\n\n</body>\n</html>\n"
+    http_version: 
+  recorded_at: Tue, 06 Aug 2013 00:35:19 GMT
+recorded_with: VCR 2.5.0
